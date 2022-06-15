@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 45px;
+
+  @include vp-767 {
+    padding: 0 38px;
+    min-width: 375px;
+  }
+}

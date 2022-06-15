@@ -1,0 +1,91 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+// Desktop first
+
+@mixin vp-1919 {
+  @media (max-width: $vp-1920 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1365 {
+  @media (max-width: $vp-1366 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1314 {
+  @media (max-width: $vp-1315 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1299 {
+  @media (max-width: $vp-1300 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1269 {
+  @media (max-width: $vp-1270 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1199 {
+  @media (max-width: $vp-1200 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1179 {
+  @media (max-width: $vp-1180 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1023 {
+  @media (max-width: $vp-1024 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @media (max-width: $vp-768 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-599 {
+  @media (max-width: $vp-600 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-575 {
+  @media (max-width: $vp-576 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-479 {
+  @media (max-width: $vp-480 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-374 {
+  @media (max-width: $vp-375 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-319 {
+  @media (max-width: $vp-320 - 1) {
+    @content;
+  }
+}

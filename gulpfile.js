@@ -24,24 +24,24 @@ const css = () => {
         grid: true,
       })]))
       .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
-      .pipe(gulp.dest('build/css'))
+      .pipe(gulp.dest('docs/css'))
       .pipe(csso())
       .pipe(rename('style.min.css'))
       .pipe(sourcemap.write('.'))
-      .pipe(gulp.dest('build/css'))
+      .pipe(gulp.dest('docs/css'))
       .pipe(server.stream());
 };
 
 const jsMain = () => {
   return gulp.src(['source/js/main.js'])
       .pipe(webpackStream(webpackConfig))
-      .pipe(gulp.dest('build/js'))
+      .pipe(gulp.dest('docs/js'))
 };
 
 const jsVendor = () => {
   return gulp.src(['source/js/vendor.js'])
     .pipe(webpackStream(webpackConfig))
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('docs/js'))
 };
 
 const svgo = () => {
@@ -62,17 +62,17 @@ const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename('sprite_auto.svg'))
-      .pipe(gulp.dest('build/img'));
+      .pipe(gulp.dest('docs/img'));
 };
 
 const copySvg = () => {
   return gulp.src('source/img/**/*.svg', {base: 'source'})
-      .pipe(gulp.dest('build'));
+      .pipe(gulp.dest('docs'));
 };
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg,webp}', {base: 'source'})
-      .pipe(gulp.dest('build'));
+      .pipe(gulp.dest('docs'));
 };
 
 const copy = () => {
@@ -84,16 +84,16 @@ const copy = () => {
   ], {
     base: 'source',
   })
-      .pipe(gulp.dest('build'));
+      .pipe(gulp.dest('docs'));
 };
 
 const clean = () => {
-  return del('build');
+  return del('docs');
 };
 
 const syncServer = () => {
   server.init({
-    server: 'build/',
+    server: 'docs/',
     notify: false,
     open: true,
     cors: true,
@@ -126,12 +126,12 @@ const createWebp = () => {
 };
 
 const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
+  return gulp.src('docs/img/**/*.{png,jpg}')
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({quality: 75, progressive: true}),
     ]))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('docs/img'));
 };
 
 const build = gulp.series(clean, svgo, copy, css, sprite, jsMain, jsVendor);

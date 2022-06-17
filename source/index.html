@@ -15,678 +15,485 @@
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body style="background-image: url('img/content/back@1x.png');">
-<div class="wrapper" >
+<body class="page__body home" style="background-image: url('img/content/back@1x.png');">
+<div class="wrapper">
   <header class="page-header">
-    <div class="page-header__container container">
-      <nav class="main-nav">
-        <a class="main-nav__logo" aria-label="Логотип фитнесс-центра Supergym">
-          <picture>
-            <source media="(max-width: 767px)"  srcset="img/svg/logo-mobile.svg">
-            <img src="img/svg/logo-desktop.svg" width="89" height="20" alt="Логотип">
-          </picture>
-        </a>
-        <address>
-          <a class="main-nav__link" href="tel:+78005555555" aria-label="tel:+78005555555">
-            <span>8-800-555-55-55</span>
-          </a>
-        </address>
-      </nav>
-      <section class="intro">
-        <div class="intro__info-wrapper">
-          <h1>Фитнес центр</h1>
-          <ul>
-            <li>Тренажёрный зал</li>
-            <li>Групповые занятия</li>
-            <li>Кардио-зона</li>
-          </ul>
-          <span>Омск</span>
-          <a class="btn" href="#subscriptions" data-anchor="1">Купить абонемент</a>
-        </div>
-        <div class="intro__image-wrapper">
-          <picture>
-            <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/intro-image-tablet@1x.webp 1x,
-                          img/content/intro-image-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/content/intro-image-desktop@1x.webp 1x,
-                          img/content/intro-image-desktop@2x.webp 2x">
-            <!-- 1х: 500px; 2x: 1000px -->
-            <img src="img/content/intro-image-desktop@1x.jpg" srcset="img/content/intro-image-desktop@2x.jpg 2x"
-              alt="Фото мускулистого мужчины" width="500" height="556">
-          </picture>
-        </div>
-        <ul class="intro__list">
-          <li>
-            <a href="#" aria-label="Страница Supergym в Фейсбуке">Fb</a>
+    <div class="container">
+      <a class="page-header__logo" aria-label="Логотип">
+        <picture>
+          <source media="(max-width: 767px)"  srcset="img/svg/logo-mobile.svg">
+          <img src="img/svg/logo-desktop.svg" width="181" height="144" alt="Логотип">
+        </picture>
+      </a>
+      <nav class="main-nav menu-primary-container">
+        <ul class="main-nav__list menu">
+          <li class="main-nav__item menu-item">
+            <a class="main-nav__link" href="https://vk.com/ok_mamontova" aria-label="Оксана Мамонтова в ВКонтакте">
+              <svg aria-hidden="true" width="26" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-vk2"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a href="#" aria-label="Страница Supergym в ВКонтакте">Vk</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Страница Supergym в Инстаграмм">Ig</a>
+          <li class="main-nav__item menu-item">
+            <a class="main-nav__link" href="https://wa.me/<89378449991>" aria-label="Оксана Мамонтова в WhatsApp">
+              <svg aria-hidden="true" width="26" height="26">
+                <use xlink:href="img/sprite_auto.svg#icon-whatsapp2"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </section>
+      </nav>
     </div>
   </header>
-
   <main class="page-main">
-    <section class="about container">
-      <div class="about__container">
-        <div class="about__info-wrapper">
-          <h2>Тренажерный зал</h2>
-          <p>Просторный зал площадью 900&nbsp;кв/м</p>
-          <p>Supergym <span>-</span> самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления
-            тела и&nbsp;здоровья.
-            Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
-          <p>В&nbsp;зале расположены отдельная зона для&nbsp;Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
-            Также в&nbsp;фитнес
-            центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.</p>
-        </div>
-        <div class="about__media-container">
-          <div class="about__image-container">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/content/about-image-mobile@1x.webp 1x, img/content/about-image-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/about-image-tablet@1x.webp 1x, img/content/about-image-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/content/about-image-desktop@1x.webp 1x, img/content/about-image-desktop@2x.webp 2x">
-              <!-- 1х: 660px; 2x: 1320px -->
-              <img src="img/content/about-image-desktop@1x.jpg" srcset="img/content/about-image-desktop@2x.jpg 2x"
-                width="660" height="401" alt="Фото тренажерного зала">
-            </picture>
-          </div>
-          <div class="about__video-wrapper video">
-            <div id="player">
-              <a class="video__link" href="#" data-video="link" aria-label="Видео о тренажерном зале">
-                <div>
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-back-mobile@1x.webp 1x, img/content/video-back-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/video-back-tablet@1x.webp 1x, img/content/video-back-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/video-back-desktop@1x.webp 1x, img/content/video-back-desktop@2x.webp 2x">
-                    <!-- 1х: 364px; 2x: 728px -->
-                    <img src="img/content/video-back-desktop@1x.jpg" srcset="img/content/video-back-desktop@2x.jpg 2x"
-                      width="364" height="228" alt="Видео о нашем тренажерном зале">
-                  </picture>
-                </div>
-              </a>
-              <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео"></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="subscriptions" id="subscriptions">
+    <section class="intro">
       <div class="container">
-        <h2>Абонементы</h2>
-        <div class="subscriptions__tabs tabs">
-          <div class="tabs__tablinks">
-            <a id="1month-tab" class="tabs__link tabs__link--1month current" data-tab="1month">1 месяц</a>
-            <a id="6months-tab" class="tabs__link tabs__link--6months" data-tab="6months">6 месяцев</a>
-            <a id="12months-tab" class="tabs__link tabs__link--12months" data-tab="12months">12 месяцев</a>
-          </div>
-          <div id="1month" class="tabs__tabcontent tabs__tabcontent--1month current">
-            <ul>
-              <li data-tabcard="1">
-                <h3>С тренером</h3>
-                <p>12 занятий</p>
-                <p data-price="5000">5000
-                  <svg aria-hidden="true" width="30" height="42" aria-label="рублей">
-                    <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
-                  </svg>
-                </p>
-                <a class="btn" href="#">Купить абонемент</a>
-              </li>
-              <li data-tabcard="1">
-                <h3>Дневной</h3>
-                <p>с 8:00 до 17:00</p>
-                <p data-price="1700">1700
-                  <svg aria-hidden="true" width="30" height="42" aria-label="рублей">
-                    <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
-                  </svg>
-                </p>
-                <a class="btn" href="#">Купить абонемент</a>
-              </li>
-              <li data-tabcard="1">
-                <h3>Полный день</h3>
-                <p>с 8:00 до 22:00 </p>
-                <p data-price="2700">2700
-                  <svg aria-hidden="true" width="30" height="42" aria-label="рублей">
-                    <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
-                  </svg>
-                </p>
-                <a class="btn" href="#">Купить абонемент</a>
-              </li>
-            </ul>
-          </div>
-          <div id="6months" class="tabs__tabcontent tabs__tabcontent--6months">
-            <ul>
-              <li data-tabcard="1">
-                <h3>С тренером</h3>
-                <p>12 занятий</p>
-                <p data-price="5000">10000
-                  <svg aria-hidden="true" width="30" height="42" aria-label="рублей">
-                    <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
-                  </svg>
-                </p>
-                <a class="btn" href="#">Купить абонемент</a>
-              </li>
-              <li data-tabcard="1">
-                <h3>Дневной</h3>
-                <p>с 8:00 до 17:00</p>
-                <p data-price="1700">3400
-                  <svg aria-hidden="true" width="30" height="42" aria-label="рублей">
-                    <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
-                  </svg>
-                </p>
-                <a class="btn" href="#">Купить абонемент</a>
-              </li>
-              <li data-tabcard="1">
-                <h3>Полный день</h3>
-                <p>с 8:00 до 22:00 </p>
-                <p data-price="2700">5400
-                  <svg aria-hidden="true" width="30" height="42" aria-label="рублей">
-                    <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
-                  </svg>
-                </p>
-                <a class="btn" href="#">Купить абонемент</a>
-              </li>
-            </ul>
-          </div>
-          <div id="12months" class="tabs__tabcontent tabs__tabcontent--12month">
-            <ul>
-              <li data-tabcard="1">
-                <h3>С тренером</h3>
-                <p>12 занятий</p>
-                <p data-price="5000">15000
-                  <svg aria-hidden="true" width="30" height="42" aria-label="рублей">
-                    <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
-                  </svg>
-                </p>
-                <a class="btn" href="#">Купить абонемент</a>
-              </li>
-              <li data-tabcard="1">
-                <h3>Дневной</h3>
-                <p>с 8:00 до 17:00</p>
-                <p data-price="1700">8100
-                  <svg aria-hidden="true" width="30" height="42" aria-label="рублей">
-                    <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
-                  </svg>
-                </p>
-                <a class="btn" href="#">Купить абонемент</a>
-              </li>
-              <li data-tabcard="1">
-                <h3>Полный день</h3>
-                <p>с 8:00 до 22:00 </p>
-                <p data-price="2700">10400
-                  <svg aria-hidden="true" width="30" height="42" aria-label="рублей">
-                    <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
-                  </svg>
-                </p>
-                <a class="btn" href="#">Купить абонемент</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="promo">
-      <div class="promo__container container">
-        <div class="promo__info">
-          <div class="promo__info-wrapper">
-            <h3>Super games</h3>
-            <dl class="promo__list">
-              <div class="promo__group promo__group--date">
-                <dt>Дата</dt>
-                <dd><span>7</span> Mарта 2019</dd>
-              </div>
-              <div class="promo__group promo__group--time">
-                <dt>Время</dt>
-                <dd><span>12:00</span></dd>
-              </div>
-            </dl>
-            <p>Ежегодные соревнования по&nbsp;CrossFit</p>
-            <a class="btn" href="#">Заполнить заявку</a>
-          </div>
-        </div>
-        <div class="promo__image-wrapper">
+        <h2>Духовный наставник по материальным вопросам</h2>
+        <div class="intro__image-wrapper">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/supergames-image-mobile@1x.webp 1x, img/content/supergames-image-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/supergames-image-tablet@1x.webp 1x, img/content/supergames-image-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/content/supergames-image-desktop@1x.webp 1x, img/content/supergames-image-desktop@2x.webp 2x">
-            <!-- 1х: 660px; 2x: 1320px -->
-            <img src="img/content/supergames-image-desktop@1x.jpg" srcset="img/content/supergames-image-desktop@2x.jpg 2x"
-              width="660" height="500" alt="Фото мужчины, ударяющего по полу. Меловая пыль разлетается от его удара">
+            <source type="image/webp" media="(max-width: 768px)" srcset="img/content/main-foto-mobile@1x.webp 1x, img/content/main-foto-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/main-foto@1x.webp 1x, img/content/main-foto@2x.webp 2x">
+            <source media="(max-width: 768px)" srcset="img/content/main-foto-mobile@1x.png 1x, img/content/main-foto-mobile@2x.png 2x">
+            <!-- 1х: 500px; 2x: 1000px -->
+            <img src="img/content/main-foto@1x.png" srcset="img/content/main-foto@2x.png 2x"
+              alt="Фото Оксаны Мамонтовой" width="703" height="854">
           </picture>
         </div>
-      </div>
-    </section>
-    <section class="trainers is-nojs" data-swiper="trainers">
-      <div class="trainers__container container">
-        <h2>Тренеры</h2>
-        <div class="trainers__swiper swiper">
-          <div class="trainers__wrapper swiper-wrapper">
-            <div class="trainers__slide swiper-slide" tabindex="0">
-              <div class="trainers__image-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="img/content/trainer1-desktop@1x.webp 1x, img/content/trainer1-desktop@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/trainer1-desktop@1x.jpg" srcset="img/content/trainer1-desktop@2x.jpg 2x"
-                    width="260" height="294" alt="Фото тренера Анны Павловой">
-                </picture>
-              </div>
-              <article class="no-scrollbar">
-                <h4>Анна Павлова</h4>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3&nbsp;Trainer</li>
-                  <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </div>
-            <div class="trainers__slide swiper-slide" tabindex="0">
-              <div class="trainers__image-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="img/content/trainer2-desktop@1x.webp 1x, img/content/trainer2-desktop@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/trainer2-desktop@1x.jpg" srcset="img/content/trainer2-desktop@2x.jpg 2x"
-                    width="260" height="294" alt="Фото тренера Алексея Лаврова">
-                </picture>
-              </div>
-              <article class="no-scrollbar">
-                <h4>Алексей Лавров</h4>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3&nbsp;Trainer</li>
-                  <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </div>
-            <div class="trainers__slide swiper-slide" tabindex="0">
-              <div class="trainers__image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/trainer3-mobile@1x.webp 1x, img/content/trainer3-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/trainer3-tablet@1x.webp 1x, img/content/trainer3-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/trainer3-desktop@1x.webp 1x, img/content/trainer3-desktop@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/trainer3-desktop@1x.jpg" srcset="img/content/trainer3-desktop@2x.jpg 2x"
-                    width="260" height="292" alt="Фото тренера Александра Пашкова">
-                </picture>
-              </div>
-              <article class="no-scrollbar">
-                <h4>Александр Пашков</h4>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3&nbsp;Trainer</li>
-                  <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </div>
-            <div class="trainers__slide swiper-slide" tabindex="0">
-              <div class="trainers__image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/trainer4-tablet@1x.webp 1x, img/content/trainer4-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/trainer4-desktop@1x.webp 1x, img/content/trainer4-desktop@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/trainer4-desktop@1x.jpg" srcset="img/content/trainer4-desktop@2x.jpg 2x"
-                    width="260" height="294" alt="Фото тренера Марии Кетовой">
-                </picture>
-              </div>
-              <article class="no-scrollbar">
-                <h4>Мария Кетова</h4>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3&nbsp;Trainer</li>
-                  <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </div>
-            <div class="trainers__slide swiper-slide" tabindex="0">
-              <div class="trainers__image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/trainer3-mobile@1x.webp 1x, img/content/trainer3-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/trainer3-tablet@1x.webp 1x, img/content/trainer3-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/trainer3-desktop@1x.webp 1x, img/content/trainer3-desktop@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/trainer3-desktop@1x.jpg" srcset="img/content/trainer3-desktop@2x.jpg 2x"
-                    width="260" height="292" alt="Фото тренера Александра Пашкова">
-                </picture>
-              </div>
-              <article class="no-scrollbar">
-                <h4>Александр Пашков</h4>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3&nbsp;Trainer</li>
-                  <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </div>
-            <div class="trainers__slide swiper-slide" tabindex="0">
-              <div class="trainers__image-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="img/content/trainer1-desktop@1x.webp 1x, img/content/trainer1-desktop@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/trainer1-desktop@1x.jpg" srcset="img/content/trainer1-desktop@2x.jpg 2x"
-                    width="260" height="294" alt="Фото тренера Анны Павловой">
-                </picture>
-              </div>
-              <article class="no-scrollbar">
-                <h4>Анна Павлова</h4>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3&nbsp;Trainer</li>
-                  <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </div>
-            <div class="trainers__slide swiper-slide" tabindex="0">
-              <div class="trainers__image-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="img/content/trainer2-desktop@1x.webp 1x, img/content/trainer2-desktop@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/trainer2-desktop@1x.jpg" srcset="img/content/trainer2-desktop@2x.jpg 2x"
-                    width="260" height="294" alt="Фото тренера Алексея Лаврова">
-                </picture>
-              </div>
-              <article class="no-scrollbar">
-                <h4>Алексей Лавров</h4>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3&nbsp;Trainer</li>
-                  <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </div>
-            <div class="trainers__slide swiper-slide" tabindex="0">
-              <div class="trainers__image-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="img/content/trainer2-desktop@1x.webp 1x, img/content/trainer2-desktop@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/trainer2-desktop@1x.jpg" srcset="img/content/trainer2-desktop@2x.jpg 2x"
-                    width="260" height="294" alt="Фото тренера Алексея Лаврова">
-                </picture>
-              </div>
-              <article class="no-scrollbar">
-                <h4>Алексей Лавров</h4>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3&nbsp;Trainer</li>
-                  <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </div>
-        <button class="trainers__button-prev swiper-button-prev" aria-label="назад" type="button">
-          <svg aria-hidden="true" width="18" height="34">
-            <use xlink:href="img/sprite_auto.svg#icon-arrow-prev"></use>
-          </svg>
-        </button>
-        <button class="trainers__button-next swiper-button-next" aria-label="вперед" type="button">
-          <svg aria-hidden="true" width="16" height="32">
-            <use xlink:href="img/sprite_auto.svg#icon-arrow-prev"></use>
-          </svg>
-        </button>
-      </div>
-    </section>
-    <section class="advantages">
-      <div class="advantages__container container">
-        <h2>Наши преимущества</h2>
-        <ul>
-          <li class="advantages__item">
-            <p>900 <span>кв.м</span></p>
-            <div class="advantages__info-wrapper">
-              <h4>Площадь</h4>
-              <p>Занимайтесь без&nbsp;очередей и&nbsp;толпучки</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <p>70 <span>машин</span></p>
-            <div class="advantages__info-wrapper">
-              <h4>Собственная парковка</h4>
-              <p>Вы&nbsp;всегда найдете место для&nbsp;своей машины на&nbsp;нашей парковке</p>
-            </div>
-          </li>
-          <li class="advantages__item advantages__item--center">
-            <h4>100<span>Tренажеров</span></h4>
-            <p>Современные тренажеры на&nbsp;все&nbsp;группы мышцы</p>
-          </li>
-          <li class="advantages__item">
-            <p>350 <span>мест</span></p>
-            <div class="advantages__info-wrapper">
-              <h4>Комфорт</h4>
-              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <p>5+ <span>лет</span></p>
-            <div class="advantages__info-wrapper">
-              <h4>Тренерский опыт</h4>
-              <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
-            </div>
-          </li>
+        <ul class="intro__description-wrapper">
+          <li>Помогаю женщинам найти свое место в жизни</li>
+          <li>Помогаю научиться жить в любви и вдохновении</li>
         </ul>
-      </div>
-    </section>
-    <section class="sales">
-      <div class="sales__container container">
-        <h2>Акции</h2>
-        <ul>
-          <li class="sales__item sales__item--image">
-            <div class="sales__info-wrapper">
-              <h3>Год <span>4999</span></h3>
-              <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
-              <a href="#">Подробнее</a>
-            </div>
-            <div class="sales__image-wrapper">
+        <div class="intro__text-review-wrapper">
+          <div class="intro__user">
+            <div>
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/content/sales-image-mobile@1x.webp 1x, img/content/sales-image-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/sales-image-tablet@1x.webp 1x, img/content/sales-image-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/sales-image-desktop@1x.webp 1x, img/content/sales-image-desktop@2x.webp 2x">
-                <!-- 1х: 399px; 2x: 798px -->
-                <img src="img/content/sales-image-tablet@1x.jpg" srcset="img/content/sales-image-tablet@2x.jpg 2x"
-                  width="399" height="462" alt="Фото улыбающейся девушки">
+                <source type="image/webp" srcset="img/content/foto-review@1x.webp 1x, img/content/foto-review@2x.webp 2x">
+                <!-- 1х: 500px; 2x: 1000px -->
+                <img src="img/content/foto-review@1x.jpg" srcset="img/content/foto-review@2x.jpg 2x"
+                  alt="Фото Юлии М." width="71" height="71">
               </picture>
             </div>
+            <span>Юлия М.</span>
+          </div>
+          <p class="intro__user-text">
+            Здорово иметь такого специалиста как вы, который ведет
+            за руку. У меня запустились процессы работы с глубинными убеждениями, целостность и согласованность внутри,
+            что даёт ощущения стержня.
+          </p>
+          <a href="#text-reviews" aria-label="Читать больше текстовых отзывов"></a>
+        </div>
+        <a class="intro__link-image" href="#video-reviews" data-anchor="1"></a>
+        <a class="intro__link-text" href="#video-reviews" data-anchor="2">Посмотрите видео отзыв</a>
+        <ul>
+          <li>
+            <a href="https://wa.me/<89378449991>">Бесплатная диагностика</a>
           </li>
-          <li class="sales__item sales__item--border">
-            <h3>Месяц бесплатно</h3>
-            <p>Приведи друга, получи<br> абонемент в&nbsp;подарок</p>
-            <a href="#">Подробнее</a>
-          </li>
-          <li class="sales__item sales__item--border">
-            <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес с&nbsp;командой</p>
-            <a href="#">Подробнее</a>
+          <li>
+            <a href="https://wa.me/<89378449991>">Прогноз будущего</a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="reviews is-nojs" data-swiper="reviews">
-      <div class="reviews__container container">
-        <h2>Отзывы</h2>
-        <div class="reviews__swiper swiper">
-          <div class="reviews__wrapper swiper-wrapper">
-            <div class="reviews__slide swiper-slide no-scrollbar">
-              <div class="reviews__image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/reviews-mobile@1x.webp 1x, img/content/reviews-mobile@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/reviews-desktop@1x.webp 1x, img/content/reviews-desktop@2x.webp 2x">
-                  <!-- 1х: 80px; 2x: 160px -->
-                  <img src="img/content/reviews-desktop@1x.jpg" srcset="img/content/reviews-desktop@2x.jpg 2x"
-                    width="80" height="80" alt="Фото Анны Павловой">
-                </picture>
-              </div>
-              <div class="reviews__info-wrapper">
-                <h3>Анна Орлова</h3>
-                <p>«Хожу в&nbsp;SuperClub уже&nbsp;больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто, тренажеры
-                  обновляют, персонал
-                  дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет&nbsp;очередей»</p>
-              </div>
+    <section class="about">
+      <div class="container">
+        <div class="about__image-container">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/about-main-foto-mobile@1x.webp 1x, img/content/about-main-foto-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/about-main-foto@1x.webp 1x, img/content/about-main-foto@2x.webp 2x">
+            <source media="(max-width: 768px)" srcset="img/content/about-main-foto-mobile@1x.jpg 1x, img/content/about-main-foto-mobile@2x.jpg 2x">
+            <!-- 1х: 660px; 2x: 1320px -->
+            <img src="img/content/about-main-foto@1x.jpg" srcset="img/content/about-main-foto@2x.jpg 2x"
+              width="749" height="489" alt="Фото Оксаны Мамонтовой на фоне храма">
+          </picture>
+        </div>
+        <div class="about__info-wrapper">
+          <div class="wysiwyg-wrapper">
+            <h1>Оксана Мамонтова</h1>
+            <h3>Обо мне</h3>
+            <p>Духовный наставник, психоаналитик, трансформационный тренер, тета-практик. Город Москва</p>
+            <ul>
+              <li>Обладает даром предвидения будущей кармы</li>
+              <li>Видит профессиональное Предназначение <span>каждого человека</span></li>
+              <li>Автор курса «Свобода говорить» <span>который прошли</span> больше 5000 человек <span>по всему миру</span></li>
+              <li>Личный коуч миллионеров и миллиардеров</li>
+              <li>Блогер ЖЖ, автор блога про путешествия и тест-драйвы автомобилей</li>
+              <li>Видит профессиональное Предназначение каждого человека</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__results-wrapper">
+          <div class="wysiwyg-wrapper">
+            <ul>
+              <li>Училась в тибетском монастыре Менри, прошла посвящение у Далай Ламы лично, дав обет помогать всем
+                живым существам выходить из круга страданий Сансары</li>
+              <li>Помогла больше 15 тысячам женщин научиться любить себя независимо от результатов и достижений. Все они
+                обрели гармонию и смогли реализовать себя</li>
+              <li>Популярный детский преподаватель, куратор и основатель детской радиошколы в Уфе</li>
+              <li>С 15 лет в СМИ. Журналист «Комсомольской Правды» с 2005 по 2016 год</li>
+              <li>Известная радиоведущая «Радио Маяк» и «Русское Радио» в Башкирии с 2007 по 2017 года</li>
+              <li>Сменила больше 14 профессий, чтобы найти Себя. В каждом направлении становилась лучшей и только потом
+                уходила</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews is-nojs">
+      <!--      data-swiper="trainers">-->
+      <div class="container">
+        <h3>Что говорят клиенты</h3>
+        <div class="reviews__tabs tabs">
+          <div class="tabs__wrapper">
+            <div class="tabs__tablinks">
+              <a id="text-tab" href="#text-reviews" class="tabs__link tabs__link--greece current" data-tab="text-reviews">Текстовые отзывы</a>
+              <a id="video-tab" href="#video-reviews" class="tabs__link tabs__link--albania" data-tab="video-reviews">Видео отзывы</a>
             </div>
-            <div class="reviews__slide swiper-slide no-scrollbar">
-              <div class="reviews__image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/reviews-mobile@1x.webp 1x, img/content/reviews-mobile@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/reviews-desktop@1x.webp 1x, img/content/reviews-desktop@2x.webp 2x">
-                  <!-- 1х: 80px; 2x: 160px -->
-                  <img src="img/content/reviews-desktop@1x.jpg" srcset="img/content/reviews-desktop@2x.jpg 2x"
-                    width="80" height="80" alt="Фото Анны Павловой">
-                </picture>
+          </div>
+          <div class="tabs__tabcontent tabs__tabcontent--text-reviews current review" id="text-reviews">
+            <div class="review__swiper swiper">
+              <div class="review__wrapper swiper-wrapper">
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-1-mobile@1x.webp 1x, img/content/text-review-1-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-1@1x.webp 1x, img/content/text-review-1@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-1-mobile@1x.jpg 1x, img/content/text-review-1-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-1@1x.jpg" srcset="img/content/text-review-1@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-2-mobile@1x.webp 1x, img/content/text-review-2-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-2@1x.webp 1x, img/content/text-review-2@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-2-mobile@1x.jpg 1x, img/content/text-review-2-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-2@1x.jpg" srcset="img/content/text-review-2@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-3-mobile@1x.webp 1x, img/content/text-review-3-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-3@1x.webp 1x, img/content/text-review-3@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-3-mobile@1x.jpg 1x, img/content/text-review-3-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-3@1x.jpg" srcset="img/content/text-review-3@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-4-mobile@1x.webp 1x, img/content/text-review-4-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-4@1x.webp 1x, img/content/text-review-4@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-4-mobile@1x.jpg 1x, img/content/text-review-4-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-4@1x.jpg" srcset="img/content/text-review-4@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-5-mobile@1x.webp 1x, img/content/text-review-5-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-5@1x.webp 1x, img/content/text-review-5@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-5-mobile@1x.jpg 1x, img/content/text-review-5-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-5@1x.jpg" srcset="img/content/text-review-5@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-6-mobile@1x.webp 1x, img/content/text-review-6-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-6@1x.webp 1x, img/content/text-review-6@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-6-mobile@1x.jpg 1x, img/content/text-review-6-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-6@1x.jpg" srcset="img/content/text-review-6@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-7-mobile@1x.webp 1x, img/content/text-review-7-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-7@1x.webp 1x, img/content/text-review-7@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-7-mobile@1x.jpg 1x, img/content/text-review-7-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-7@1x.jpg" srcset="img/content/text-review-7@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-8-mobile@1x.webp 1x, img/content/text-review-8-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-8@1x.webp 1x, img/content/text-review-8@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-8-mobile@1x.jpg 1x, img/content/text-review-8-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-8@1x.jpg" srcset="img/content/text-review-8@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-9-mobile@1x.webp 1x, img/content/text-review-9-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-9@1x.webp 1x, img/content/text-review-9@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-9-mobile@1x.jpg 1x, img/content/text-review-9-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-9@1x.jpg" srcset="img/content/text-review-9@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-10-mobile@1x.webp 1x, img/content/text-review-10-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-10@1x.webp 1x, img/content/text-review-10@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-10-mobile@1x.jpg 1x, img/content/text-review-10-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-10@1x.jpg" srcset="img/content/text-review-10@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-11-mobile@1x.webp 1x, img/content/text-review-11-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-11@1x.webp 1x, img/content/text-review-11@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-11-mobile@1x.jpg 1x, img/content/text-review-11-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-11@1x.jpg" srcset="img/content/text-review-11@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-12-mobile@1x.webp 1x, img/content/text-review-12-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-12@1x.webp 1x, img/content/text-review-12@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-12-mobile@1x.jpg 1x, img/content/text-review-12-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-12@1x.jpg" srcset="img/content/text-review-12@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-13-mobile@1x.webp 1x, img/content/text-review-13-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-13@1x.webp 1x, img/content/text-review-13@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-13-mobile@1x.jpg 1x, img/content/text-review-13-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-13@1x.jpg" srcset="img/content/text-review-13@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-14-mobile@1x.webp 1x, img/content/text-review-14-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-14@1x.webp 1x, img/content/text-review-14@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-14-mobile@1x.jpg 1x, img/content/text-review-14-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-1@1x.jpg" srcset="img/content/text-review-1@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-15-mobile@1x.webp 1x, img/content/text-review-15-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/text-review-15@1x.webp 1x, img/content/text-review-15@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/text-review-15-mobile@1x.jpg 1x, img/content/text-review-15-mobile@2x.jpg 2x">
+                    <!-- 1х: 364px; 2x: 728px -->
+                    <img src="img/content/text-review-15@1x.jpg" srcset="img/content/text-review-15@2x.jpg 2x"
+                      width="338" height="522" alt="Видео отзыв">
+                  </picture>
+                </div>
               </div>
-              <div class="reviews__info-wrapper">
-                <h3>Анна Орлова</h3>
-                <p>«Хожу в&nbsp;SuperClub уже&nbsp;больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто, тренажеры
-                  обновляют, персонал
-                  дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет&nbsp;очередей»</p>
-              </div>
+              <button class="reviews__button reviews__button--prev swiper-button-prev" type="button"
+                aria-label="Предыдущий слайд">
+                <svg aria-hidden="true" width="24" height="12">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+              <button class="reviews__button reviews__button--next swiper-button-next" type="button"
+                aria-label="Следующий слайд">
+                <svg aria-hidden="true" width="24" height="12">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
             </div>
-            <div class="reviews__slide swiper-slide no-scrollbar">
-              <div class="reviews__image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/reviews-mobile@1x.webp 1x, img/content/reviews-mobile@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/reviews-desktop@1x.webp 1x, img/content/reviews-desktop@2x.webp 2x">
-                  <!-- 1х: 80px; 2x: 160px -->
-                  <img src="img/content/reviews-desktop@1x.jpg" srcset="img/content/reviews-desktop@2x.jpg 2x"
-                    width="80" height="80" alt="Фото Анны Павловой">
-                </picture>
+          </div>
+          <div class="tabs__tabcontent tabs__tabcontent--video-reviews" id="video-reviews">
+            <div class="review__swiper swiper">
+              <div class="review__wrapper swiper-wrapper">
+                <div class="review__slide swiper-slide">
+                  <div class="review__video-wrapper review__video-wrapper-single video">
+                    <div id="player">
+                      <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
+                        <div>
+                          <picture>
+                            <!--                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-1-mobile@1x.webp 1x, img/content/video-review-1-mobile@2x.webp 2x">-->
+                            <source type="image/webp" srcset="img/content/video-review-1@1x.webp 1x, img/content/video-review-1@2x.webp 2x">
+                            <!--                            <source media="(max-width: 767px)" srcset="img/content/video-review-1-mobile@1x.jpg 1x, img/content/video-review-1-mobile@2x.jpg 2x">-->
+                            <!-- 1х: 364px; 2x: 728px -->
+                            <img src="img/content/video-review-1@1x.jpg" srcset="img/content/video-review-1@2x.jpg 2x"
+                              width="338" height="521" alt="Видео отзыв">
+                          </picture>
+                        </div>
+                      </a>
+                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                        <svg aria-hidden="true" width="34" height="34">
+                          <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <div class="review__video-wrapper review__video-wrapper-single video">
+                    <div id="player">
+                      <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
+                        <div>
+                          <picture>
+                            <!--                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-1-mobile@1x.webp 1x, img/content/video-review-1-mobile@2x.webp 2x">-->
+                            <source type="image/webp" srcset="img/content/video-review-1@1x.webp 1x, img/content/video-review-1@2x.webp 2x">
+                            <!--                            <source media="(max-width: 767px)" srcset="img/content/video-review-1-mobile@1x.jpg 1x, img/content/video-review-1-mobile@2x.jpg 2x">-->
+                            <!-- 1х: 338px; 2x: 521px -->
+                            <img src="img/content/video-review-1@1x.jpg" srcset="img/content/video-review-1@2x.jpg 2x"
+                              width="338" height="521" alt="Видео отзыв">
+                          </picture>
+                        </div>
+                      </a>
+                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                        <svg aria-hidden="true" width="34" height="34">
+                          <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <div class="review__video-wrapper review__video-wrapper-double video">
+                    <div id="player">
+                      <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
+                        <div>
+                          <picture>
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
+                            <!--                            <source type="image/webp" srcset="img/content/video-review-2@1x.webp 1x, img/content/video-review-2@2x.webp 2x">-->
+                            <source media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.jpg 1x, img/content/video-review-2-mobile@2x.jpg 2x">
+                            <!-- 1х: 338px; 2x: 521px -->
+                            <!--                            <img src="img/content/video-review-2@1x.jpg" srcset="img/content/video-review-2@2x.jpg 2x"-->
+                            width="338" height="521" alt="Видео отзыв">
+                          </picture>
+                        </div>
+                      </a>
+                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                        <svg aria-hidden="true" width="34" height="34">
+                          <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div id="player">
+                      <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
+                        <div>
+                          <picture>
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
+                            <!--                            <source type="image/webp" srcset="img/content/video-review-2@1x.webp 1x, img/content/video-review-2@2x.webp 2x">-->
+                            <source media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.jpg 1x, img/content/video-review-2-mobile@2x.jpg 2x">
+                            <!-- 1х: 338px; 2x: 521px -->
+                            <!--                            <img src="img/content/video-review-2@1x.jpg" srcset="img/content/video-review-2@2x.jpg 2x"-->
+                            width="338" height="521" alt="Видео отзыв">
+                          </picture>
+                        </div>
+                      </a>
+                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                        <svg aria-hidden="true" width="34" height="34">
+                          <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__slide swiper-slide">
+                  <div class="review__video-wrapper review__video-wrapper-double video">
+                    <div id="player">
+                      <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
+                        <div>
+                          <picture>
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
+                            <source type="image/webp" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
+                            <source media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.jpg 1x, img/content/video-review-2-mobile@2x.jpg 2x">
+                            <!-- 1х: 338px; 2x: 521px -->
+                            <img src="img/content/video-review-2-mobile@1x.jpg" srcset="img/content/video-review-2-mobile@2x.jpg 2x"
+                              width="338" height="521" alt="Видео отзыв">
+                          </picture>
+                        </div>
+                      </a>
+                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео"></button>
+                    </div>
+                    <div id="player">
+                      <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
+                        <div>
+                          <picture>
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
+                            <source type="image/webp" srcset="img/content/video-review-2@1x.webp 1x, img/content/video-review-2@2x.webp 2x">
+                            <source media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.jpg 1x, img/content/video-review-2-mobile@2x.jpg 2x">
+                            <!-- 1х: 338px; 2x: 521px -->
+                            <img src="img/content/video-review-2@1x.jpg" srcset="img/content/video-review-2@2x.jpg 2x"
+                              width="338" height="521" alt="Видео отзыв">
+                          </picture>
+                        </div>
+                      </a>
+                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео"></button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="reviews__info-wrapper">
-                <h3>Анна Орлова</h3>
-                <p>«Хожу в&nbsp;SuperClub уже&nbsp;больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто, тренажеры
-                  обновляют, персонал
-                  дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет&nbsp;очередей»</p>
-              </div>
-            </div>
-            <div class="reviews__slide swiper-slide no-scrollbar">
-              <div class="reviews__image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/reviews-mobile@1x.webp 1x, img/content/reviews-mobile@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/reviews-desktop@1x.webp 1x, img/content/reviews-desktop@2x.webp 2x">
-                  <!-- 1х: 80px; 2x: 160px -->
-                  <img src="img/content/reviews-desktop@1x.jpg" srcset="img/content/reviews-desktop@2x.jpg 2x"
-                    width="80" height="80" alt="Фото Анны Павловой">
-                </picture>
-              </div>
-              <div class="reviews__info-wrapper">
-                <h3>Анна Орлова</h3>
-                <p>«Хожу в&nbsp;SuperClub уже&nbsp;больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто, тренажеры
-                  обновляют, персонал
-                  дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет&nbsp;очередей»</p>
-              </div>
+              <button class="reviews__button reviews__button--prev swiper-button-prev" type="button"
+                aria-label="Предыдущий слайд">
+                <svg aria-hidden="true" width="24" height="12">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+              <button class="reviews__button reviews__button--next swiper-button-next" type="button"
+                aria-label="Следующий слайд">
+                <svg aria-hidden="true" width="24" height="12">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
-        <button class="reviews__button reviews__button--prev swiper-button-prev" type="button"
-          aria-label="Предыдущий слайд">
-          <svg aria-hidden="true" width="18" height="34">
-            <use xlink:href="img/sprite_auto.svg#icon-arrow-prev"></use>
-          </svg>
-        </button>
-        <button class="reviews__button reviews__button--next swiper-button-next" type="button"
-          aria-label="Следующий слайд">
-          <svg aria-hidden="true" width="18" height="34">
-            <use xlink:href="img/sprite_auto.svg#icon-arrow-prev"></use>
-          </svg>
-        </button>
       </div>
     </section>
-    <div class="page-main__wrapper">
-      <div class="page-main__container">
-        <section class="form-block" id="training-form">
-          <div class="form-block__container container">
-            <h2>Бесплатное занятие</h2>
-            <form class="form-block__form form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="form__group">
-                <input type="text" name="name" id="user-name" placeholder="Имя" required>
-                <label class="visually-hidden" for="user-name">Имя</label>
-              </div>
-              <div class="form__group">
-                <input type="tel" name="phone" id="user-phone" placeholder="Телефон"
-                  minlength="11" pattern="^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
-                <label class="visually-hidden" for="user-phone">Телефон</label>
-              </div>
-              <button class="btn" type="submit">Отправить</button>
-            </form>
-          </div>
-        </section>
-        <section class="contacts">
-          <div class="contacts__container container">
-            <h2>Контакты</h2>
-            <address>
-              <p>Адрес:
-                <a href="#">г. Омск, ул. 60 лет Октября, 7</a>
-              </p>
-              <p>График работы:
-                <a href="#">Пн-Вс: с 8:00 до 22:00</a>
-              </p>
-              <p>Телефон:
-                <a href="tel:+78005555555">8-800-555-55-55</a>
-              </p>
-              <p>Email:
-                <a href="omsk@supergym.ru">omsk@supergym.ru</a>
-              </p>
-            </address>
-          </div>
-        </section>
-      </div>
-    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container container">
-      <div class="page-footer__column-wrapper">
-<!--        <div class="page-footer__item page-footer__item&#45;&#45;logo">-->
-          <a class="page-footer__logo" aria-label="Логотип фитнесс-центра Supergym">
-            <!-- 1х: 89px; -->
-            <img src="img/content/logo-desktop.svg" width="89" height="20" alt="Логотип Supergym">
+      <div class="page-footer__info-wrapper">
+        <p class="page-footer__logo">
+          <span>Оксана Мамонтова</span>
+          <span>Духовный наставник</span>
+        </p>
+        <nav class="menu-footer-container">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="https://vk.com/ok_mamontova" aria-label="Оксана Мамонтова в ВКонтакте">
+                <!-- 1х: 26px-->
+                <img src="img/svg/icon-vk.svg" width="26" height="25" alt="Иконка ВКонтакте">
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://wa.me/<89378449991>" aria-label="Оксана Мамонтова в WhatsApp">
+                <!-- 1х: 26px-->
+                <img src="img/svg/icon-whatsapp.svg" width="26" height="26" alt="Иконка телефона">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <address class="page-footer__phone">
+          <a href="tel:+89378449991" aria-label="tel:+89378449991">
+            <span>+7 (937) 844 99 91</span>
           </a>
-<!--        </div>-->
-        <ul class="page-footer__nav-list">
-          <li>
-            <a href="#">Услуги</a>
-          </li>
-          <li>
-            <a href="#">Услуги</a>
-          </li>
-          <li>
-            <a href="#">Абонементы</a>
-          </li>
-          <li>
-            <a href="#">Акции</a>
-          </li>
-          <li>
-            <a href="#">Тренеры</a>
-          </li>
-          <li>
-            <a href="#">Расписание</a>
-          </li>
-        </ul>
+        </address>
       </div>
-      <ul class="page-footer__social social">
-        <li class="social__item social__item--vk">
-          <a href="#" aria-label="Supergym в ВКонтакте">
-            <!-- 1х: 24px-->
-            <img src="img/sprite/icon-vk.svg" width="24" height="13" alt="Иконка ВКонтакте">
-          </a>
-        </li>
-        <li class="social__item social__item--insta">
-          <a href="#" aria-label="Supergym в Инстаграмм">
-            <!-- 1х: 24px-->
-            <img src="img/svg/icon-insta.svg" width="24" height="24" alt="Иконка Инстаграмм">
-          </a>
-        </li>
-        <li class="social__item social__item--fb">
-          <a href="#" aria-label="Supergym в Фейсбук">
-            <!-- 1х: 12px-->
-            <img src="img/svg/icon-fb.svg" width="12" height="24" alt="Иконка Фейсбука">
-          </a>
-        </li>
-      </ul>
+      <div class="page-footer__meta">
+        <p>(с) Все права защищены, 2022</p>
+        <p>Дизайн сайта - Катерина Маршалл</p>
+      </div>
     </div>
   </footer>
 </div>

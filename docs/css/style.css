@@ -1700,16 +1700,6 @@ button,
   height: 28px;
 }
 
-.intro__link-text {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  grid-column: 5/6;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
-  z-index: 5;
-}
-
 .intro__buttons {
   padding: 0;
   list-style: none;
@@ -1794,6 +1784,35 @@ button,
 
 .intro__buttons-item--2 a::after {
   background-color: #e3c6c6;
+}
+
+.intro__link-text {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  z-index: 5;
+  font-size: 18px;
+  line-height: 135%;
+  position: relative;
+}
+
+.intro__link-text::after {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 50px;
+  z-index: 5;
+  bottom: -6px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-image: url("/img/svg/arrow-big.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

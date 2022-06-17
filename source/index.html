@@ -48,7 +48,7 @@
   <main class="page-main">
     <section class="intro">
       <div class="container">
-        <h2>Духовный наставник по материальным вопросам</h2>
+        <h2 class="intro__title">Духовный наставник <span>по материальным вопросам</span></h2>
         <div class="intro__image-wrapper">
           <picture>
             <source type="image/webp" media="(max-width: 768px)" srcset="img/content/main-foto-mobile@1x.webp 1x, img/content/main-foto-mobile@2x.webp 2x">
@@ -73,22 +73,25 @@
                   alt="Фото Юлии М." width="71" height="71">
               </picture>
             </div>
-            <span>Юлия М.</span>
+            <span class="intro__user-name">Юлия М.</span>
           </div>
           <p class="intro__user-text">
             Здорово иметь такого специалиста как вы, который ведет
-            за руку. У меня запустились процессы работы с глубинными убеждениями, целостность и согласованность внутри,
-            что даёт ощущения стержня.
+            за&nbsp;руку. У меня запустились процессы работы с&nbsp;глубинными убеждениями, целостность и&nbsp;согласованность внутри,
+            что&nbsp;даёт ощущения стержня.
           </p>
           <a href="#text-reviews" aria-label="Читать больше текстовых отзывов"></a>
         </div>
-        <a class="intro__link-image" href="#video-reviews" data-anchor="1"></a>
+        <a class="intro__link-image" href="#video-reviews" data-anchor="1" aria-label="Запустить видео">
+<!--          добавить 2x-->
+          <img src="img/content/icon-button-play-intro.png" width="24" height="28" aria-hidden="true" focusable="false" alt="Иконка кнопки воспроизведения видео">
+        </a>
         <a class="intro__link-text" href="#video-reviews" data-anchor="2">Посмотрите видео отзыв</a>
-        <ul>
-          <li>
+        <ul class="intro__buttons">
+          <li class="intro__buttons-item intro__buttons-item--1">
             <a href="https://wa.me/<89378449991>">Бесплатная диагностика</a>
           </li>
-          <li>
+          <li class="intro__buttons-item intro__buttons-item--2">
             <a href="https://wa.me/<89378449991>">Прогноз будущего</a>
           </li>
         </ul>

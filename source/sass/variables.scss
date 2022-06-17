@@ -3,50 +3,39 @@
 
 // Default
 
-$color-default-sapphire:            #102654;
+$color-default-grey:                #888888;
 $color-default-white:               #ffffff;
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-sapphire-transparent5:        rgba(16, 38, 84, 0.5);
-$color-sapphire-transparent89:       rgba(16, 38, 84, 0.89);
-$color-dark-cerulean-transparent5:   rgba(20, 54, 122, 0.5);
-$color-chambray:                     #495a7d;
-$color-egyptian-blue:                #103aae;
-$color-whisper:                      #e8e8e8;
-$color-dark-grey:                    #afafaf;
-$color-torch-red:                    #ed0233;
-$color-spindle:                      #b6bdcc;
-$color-ghost-white:                  #f8f9fc;
-$color-resolution-blue:              #1c3374;
-$color-light-slate-grey:             #74819c;
-$color-crimson:                      #d10a42;
-$color-black-russian:                #030a1a;
-$color-venetian-red:                 #b80027;
-$color-dark-cerulean:                #003d85;
-$color-midnight-express:             #000145;
-$color-persian-blue:                 #2e35ac;
-$color-cobalt:                       #0041ca;
-$color-royal-blue:                   #446fdd;
-$color-black:                        #000000;
-$color-shuttle-grey:                 #58606f;
-$color-grey-transparent2:            rgba(120, 120, 120, 0.2);
-$color-crimson-transparent2:         rgba(209, 10, 66, 0.2);
+$color-rosy-brown:                  #ae8b8b;
+$color-vanilla-ice:                 #e3c6c6;
+$color-floral-white:                #fffaee;
+$color-floral-white2:               #fff9ec;
+$color-oyster-pink:                 #d6afaf;
+$color-marzipan:                    #ebc77e;
+$color-medium-wood:                 #ae8668;
+$color-dark-gray:                   #aeaeae;
+$color-dark-gray2:                  #a6a6a6;
+$color-marzipan-transparent81:      rgba(232, 196, 124, 0.81);
+$color-dark-gray-transparent78:     rgba(172, 172, 172, 0.78);
+$color-white-transparent05:         rgba(67, 67, 67, 0.05);
 // Gradient
-$blue-in-red-border: linear-gradient(97.05deg, #d10a42 17.6%, #00359f 95.31%);
+//$blue-in-red-border: linear-gradient(97.05deg, #d10a42 17.6%, #00359f 95.31%);
 
 // Typography
 // ---------------------------------
 
 // переменная используемая в html для подключения скейлинга
-$fz-default:                        16px;
+$fz-default:                        17px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 //$ff-rouble:                         "Rouble", "Arial", sans-serif;
-$ff-bebasneue:                      "BN", "Arial", sans-serif;
-$ff-robotocondensed:                "Roboto Condensed", "Arial", sans-serif;
+$ff-montserrat:                     "Montserrat", "Arial", sans-serif;
+$ff-roboto:                         "Roboto", "Arial", sans-serif;
+$ff-colus:                          "Colus", "Times New Roman", serif;
 
 // Animation
 // ---------------------------------

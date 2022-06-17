@@ -11,15 +11,15 @@ import {setupVideo} from './modules/video';
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
-  iosVhFix();
+  // iosVhFix();
 
   // Modules
-  showTabs();
-  shadowTextFill();
-  addTrainersSwiper();
-  addReviewsSwiper();
-  anchorsScroll();
-  validateForm();
-  userPhoneMaskFill();
-  setupVideo();
+  // showTabs();
+  // shadowTextFill();
+  // addTrainersSwiper();
+  // addReviewsSwiper();
+  // anchorsScroll();
+  // validateForm();
+  // userPhoneMaskFill();
+  // setupVideo();
 });

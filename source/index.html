@@ -6,21 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Оксана Мамонтова. Духовный наставник по материальным вопросам">
   <title>Оксана Мамонтова</title>
-  <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/robotocondensed-light.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/bebasneue-regular.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/bebasneue-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/colus-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-<div class="wrapper">
+<body style="background-image: url('img/content/back@1x.png');">
+<div class="wrapper" >
   <header class="page-header">
     <div class="page-header__container container">
       <nav class="main-nav">
         <a class="main-nav__logo" aria-label="Логотип фитнесс-центра Supergym">
-          <!-- 1х: 89px; -->
-          <img src="img/content/logo-desktop.svg" width="89" height="20" alt="Логотип Supergym">
+          <picture>
+            <source media="(max-width: 767px)"  srcset="img/svg/logo-mobile.svg">
+            <img src="img/svg/logo-desktop.svg" width="89" height="20" alt="Логотип">
+          </picture>
         </a>
         <address>
           <a class="main-nav__link" href="tel:+78005555555" aria-label="tel:+78005555555">
@@ -667,7 +671,7 @@
         <li class="social__item social__item--vk">
           <a href="#" aria-label="Supergym в ВКонтакте">
             <!-- 1х: 24px-->
-            <img src="img/svg/icon-vk.svg" width="24" height="13" alt="Иконка ВКонтакте">
+            <img src="img/sprite/icon-vk.svg" width="24" height="13" alt="Иконка ВКонтакте">
           </a>
         </li>
         <li class="social__item social__item--insta">

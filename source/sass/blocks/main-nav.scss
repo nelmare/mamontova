@@ -1,79 +1,26 @@
-.main-nav {
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-
-  @include vp-1199 {
-    margin-bottom: 24px;
-  }
-}
-
-.main-nav__logo {
-  width: 89px;
-  height: 20px;
-  display: flex;
-  margin-right: 30px;
-  margin-top: 15px;
-
-  @include vp-1199 {
-    width: 82px;
-    height: 24px;
-  }
-
-  @include vp-767 {
-    width: 68px;
-    height: 15px;
-  }
-}
-
-.main-nav__logo img {
-  width: 89px;
-  height: 20px;
-
-  @include vp-1199 {
-    width: 82px;
-    height: 17px;
-  }
-
-  @include vp-767 {
-    width: 68px;
-    height: 15px;
-  }
-}
-
-.main-nav address {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  font-style: normal;
-  justify-content: flex-start;
-  margin-left: auto;
+  align-items: center;
 }
 
 .main-nav__link {
   display: flex;
-  margin-left: 15px;
-  margin-top: 15px;
-  color: $color-default-white;
-  font-family: $ff-bebasneue;
-  font-size: 26px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 40px;
+  background: linear-gradient(87.08deg, #FFEFBC -210.83%, #EBC77E 123.75%);
+  box-shadow: inset 0 4.03716px 14.8029px $color-floral-white2;
+  border-radius: 6.7286px;
+}
 
-  @include vp-1199 {
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-  }
-
-  @include vp-767 {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  &:hover::before,
-  &:hover {
-    opacity: 0.8;
-  }
+.main-nav__link * {
+  max-width: 26px;
+  max-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.main-nav__item {
+  margin-left: 19px;
+}
+
 .main-nav__link {
   display: flex;
   align-items: center;
@@ -13,14 +17,28 @@
   width: 39px;
   height: 40px;
   background: linear-gradient(87.08deg, #FFEFBC -210.83%, #EBC77E 123.75%);
-  box-shadow: inset 0 4.03716px 14.8029px $color-floral-white2;
-  border-radius: 6.7286px;
+  box-shadow: inset 0 4.04px 14.8px $color-floral-white2;
+  border-radius: 6.73px;
+
+  @include vp-767 {
+    width: 39px;
+    height: 40px;
+  }
 }
 
-.main-nav__link * {
+.main-nav__link svg {
   max-width: 26px;
   max-height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: $color-floral-white;
+  //box-shadow: 0 6.19268px 6.19268px rgba(232, 196, 124, 0.81);
+
+  @include vp-767 {
+    max-width: 21px;
+    max-height: 22px;
+    width: 21px;
+    height: 22px;
+  }
 }

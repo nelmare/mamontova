@@ -5,6 +5,32 @@
   min-height: 100vh;
   overflow: hidden;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1920px;
+    height: 1749px;
+    z-index: 2;
+    top: 50px;
+    left: 0;
+    background-image: url("/img/content/main-foto-clouds-top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  //&::after {
+  //  content: "";
+  //  position: absolute;
+  //  width: 1920px;
+  //  height: 451px;
+  //  z-index: 5;
+  //  top: 750px;
+  //  left: 0;
+  //  background-image: url("/img/content/clouds-covering.png");
+  //  background-repeat: no-repeat;
+  //  background-size: 100% 100%;
+  //}
+
   header,
   footer {
     flex-shrink: 0;

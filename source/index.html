@@ -15,7 +15,7 @@
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page__body home" style="background-image: url('img/content/back@1x.png');">
+<body class="page-body home" style="background-image: url('img/content/back@1x.png');">
 <div class="wrapper">
   <header class="page-header">
     <div class="container">
@@ -48,7 +48,7 @@
   <main class="page-main">
     <section class="intro">
       <div class="container">
-        <h2 class="intro__title">Духовный наставник <span>по материальным вопросам</span></h2>
+        <h2 class="intro__title">Духовный наставник<br> <span>по материальным вопросам</span></h2>
         <div class="intro__image-wrapper">
           <picture>
             <source type="image/webp" media="(max-width: 768px)" srcset="img/content/main-foto-mobile@1x.webp 1x, img/content/main-foto-mobile@2x.webp 2x">
@@ -60,33 +60,35 @@
           </picture>
         </div>
         <ul class="intro__description-wrapper">
-          <li>Помогаю женщинам найти свое место в жизни</li>
-          <li>Помогаю научиться жить в любви и вдохновении</li>
+          <li>Помогаю женщинам найти свое место в&nbsp;жизни</li>
+          <li>Помогаю научиться жить в&nbsp;любви и&nbsp;вдохновении</li>
         </ul>
-        <div class="intro__text-review-wrapper">
-          <div class="intro__user">
-            <div>
-              <picture>
-                <source type="image/webp" srcset="img/content/foto-review@1x.webp 1x, img/content/foto-review@2x.webp 2x">
-                <!-- 1х: 500px; 2x: 1000px -->
-                <img src="img/content/foto-review@1x.jpg" srcset="img/content/foto-review@2x.jpg 2x"
-                  alt="Фото Юлии М." width="71" height="71">
-              </picture>
+        <div class="intro__reviews">
+          <div class="intro__text-review-wrapper">
+            <div class="intro__user">
+              <div>
+                <picture>
+                  <source type="image/webp" srcset="img/content/foto-review@1x.webp 1x, img/content/foto-review@2x.webp 2x">
+                  <!-- 1х: 500px; 2x: 1000px -->
+                  <img src="img/content/foto-review@1x.jpg" srcset="img/content/foto-review@2x.jpg 2x"
+                    alt="Фото Юлии М." width="71" height="71">
+                </picture>
+              </div>
+              <span class="intro__user-name">Юлия М.</span>
             </div>
-            <span class="intro__user-name">Юлия М.</span>
+            <p class="intro__user-text">
+              Здорово иметь такого специалиста как вы, который ведет
+              за&nbsp;руку. У меня запустились процессы работы с&nbsp;глубинными убеждениями, целостность и&nbsp;согласованность внутри,
+              что&nbsp;даёт ощущения стержня.
+            </p>
+            <a href="#text-reviews" aria-label="Читать больше текстовых отзывов"></a>
           </div>
-          <p class="intro__user-text">
-            Здорово иметь такого специалиста как вы, который ведет
-            за&nbsp;руку. У меня запустились процессы работы с&nbsp;глубинными убеждениями, целостность и&nbsp;согласованность внутри,
-            что&nbsp;даёт ощущения стержня.
-          </p>
-          <a href="#text-reviews" aria-label="Читать больше текстовых отзывов"></a>
+          <a class="intro__link-image" href="#video-reviews" data-anchor="1" aria-label="Запустить видео">
+  <!--          добавить 2x-->
+            <img src="img/content/icon-button-play-intro.png" width="24" height="28" aria-hidden="true" alt="Иконка кнопки воспроизведения видео">
+          </a>
+          <a class="intro__link-text" href="#video-reviews" data-anchor="2">Посмотрите видео отзыв</a>
         </div>
-        <a class="intro__link-image" href="#video-reviews" data-anchor="1" aria-label="Запустить видео">
-<!--          добавить 2x-->
-          <img src="img/content/icon-button-play-intro.png" width="24" height="28" aria-hidden="true" focusable="false" alt="Иконка кнопки воспроизведения видео">
-        </a>
-        <a class="intro__link-text" href="#video-reviews" data-anchor="2">Посмотрите видео отзыв</a>
         <ul class="intro__buttons">
           <li class="intro__buttons-item intro__buttons-item--1">
             <a href="https://wa.me/<89378449991>">Бесплатная диагностика</a>

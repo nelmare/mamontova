@@ -11,11 +11,15 @@
     width: 1920px;
     height: 1749px;
     z-index: 2;
-    top: 50px;
+    top: 0;
     left: 0;
-    background-image: url("/img/content/main-foto-clouds-top.png");
+    background-image: url("../img/content/main-foto-clouds-top.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include vp-1199 {
+      top: -4.5vw;
+    }
   }
 
   //&::after {

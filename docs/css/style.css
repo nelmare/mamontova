@@ -1416,9 +1416,9 @@ button,
   width: 1920px;
   height: 1749px;
   z-index: 2;
-  top: 50px;
+  top: 0;
   left: 0;
-  background-image: url("/img/content/main-foto-clouds-top.png");
+  background-image: url("../img/content/main-foto-clouds-top.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1661,7 +1661,7 @@ button,
 
 .intro__description-wrapper li:nth-child(1n)::before {
   right: -55px;
-  background-image: url("/img/svg/arrow-big-left.svg");
+  background-image: url("../img/svg/arrow-big-left.svg");
 }
 
 .intro__description-wrapper li:nth-child(2n) {
@@ -1671,7 +1671,7 @@ button,
 
 .intro__description-wrapper li:nth-child(2n)::before {
   left: -55px;
-  background-image: url("/img/svg/arrow-big-right.svg");
+  background-image: url("../img/svg/arrow-big-right.svg");
 }
 
 .intro__reviews {
@@ -1850,6 +1850,7 @@ button,
   -ms-grid-columns: 49.4% 46%;
   grid-template-columns: 49.4% 46%;
   max-width: 774px;
+  min-width: 774px;
   width: 66.8%;
   margin: 0 auto 7px auto;
 }
@@ -1929,6 +1930,10 @@ button,
 } */
 
 @media (max-width: 1199px) {
+  .wrapper::before {
+    top: -4.5vw;
+  }
+
   .intro__title {
     font-size: 70px;
     line-height: 59px;
@@ -1937,6 +1942,16 @@ button,
   .intro__title span {
     font-size: 45px;
     line-height: 30px;
+  }
+
+  .intro__buttons {
+    min-width: auto;
+    width: 84%;
+  }
+
+  .intro__buttons li {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -1949,6 +1964,10 @@ button,
   .intro__title span {
     font-size: 30px;
     line-height: 22px;
+  }
+
+  .intro__buttons {
+    width: 100%;
   }
 }
 
@@ -1992,5 +2011,40 @@ button,
 
   .intro__title span {
     font-size: 18px;
+  }
+
+  .intro__description-wrapper li:nth-child(1n)::before {
+    display: none;
+  }
+
+  .intro__description-wrapper li:nth-child(2n) {
+    display: none;
+  }
+
+  .intro__text-review-wrapper {
+    display: none;
+  }
+
+  .intro__buttons {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 22px;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+  }
+
+  .intro__buttons li {
+    font-size: 13px;
+  }
+
+  .intro__buttons-item--1 {
+    max-width: 100%;
+  }
+
+  .intro__buttons-item--2 {
+    max-width: 100%;
   }
 }

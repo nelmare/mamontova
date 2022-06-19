@@ -7,6 +7,7 @@ import {validateForm} from './modules/form';
 import {userPhoneMaskFill} from './modules/phone-mask';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {setupVideo} from './modules/video';
+import {onIntroTextContentSet, changeIntroTextContent} from './modules/intro-text-content';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -22,4 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // validateForm();
   // userPhoneMaskFill();
   // setupVideo();
+  onIntroTextContentSet();
+  changeIntroTextContent();
 });

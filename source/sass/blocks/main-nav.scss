@@ -5,10 +5,19 @@
   display: flex;
   align-items: center;
   padding-top: 15px;
+
+  @include vp-767 {
+    padding-top: 18px;
+    margin-right: -8px;
+  }
 }
 
 .main-nav__item {
   margin-left: 19px;
+
+  @include vp-767 {
+    margin-left: 15px;
+  }
 }
 
 .main-nav__link {
@@ -22,8 +31,8 @@
   border-radius: 6.73px;
 
   @include vp-767 {
-    width: 39px;
-    height: 40px;
+    width: 33px;
+    height: 34px;
   }
 }
 

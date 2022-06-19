@@ -15,7 +15,7 @@
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page-body home" style="background-image: url('img/content/back@1x.png');">
+<body class="page-body home">
 <div class="wrapper">
   <header class="page-header">
     <div class="container">
@@ -48,19 +48,19 @@
   <main class="page-main">
     <section class="intro">
       <div class="container">
-        <h2 class="intro__title">Духовный наставник<br> <span>по материальным вопросам</span></h2>
+        <h2 class="intro__title">Духовный наставник <span>по материальным вопросам</span></h2>
         <div class="intro__image-wrapper">
           <picture>
-            <source type="image/webp" media="(max-width: 768px)" srcset="img/content/main-foto-mobile@1x.webp 1x, img/content/main-foto-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/main-foto-mobile@1x.webp 1x, img/content/main-foto-mobile@2x.webp 2x">
             <source type="image/webp" srcset="img/content/main-foto@1x.webp 1x, img/content/main-foto@2x.webp 2x">
-            <source media="(max-width: 768px)" srcset="img/content/main-foto-mobile@1x.png 1x, img/content/main-foto-mobile@2x.png 2x">
+            <source media="(max-width: 767px)" srcset="img/content/main-foto-mobile2@1x.png 1x, img/content/main-foto-mobile2@2x.png 2x">
             <!-- 1х: 500px; 2x: 1000px -->
             <img src="img/content/main-foto@1x.png" srcset="img/content/main-foto@2x.png 2x"
               alt="Фото Оксаны Мамонтовой" width="703" height="854">
           </picture>
         </div>
         <ul class="intro__description-wrapper">
-          <li>Помогаю женщинам найти свое место в&nbsp;жизни</li>
+          <li data-text="1">Помогаю женщинам найти свое место в&nbsp;жизни</li>
           <li>Помогаю научиться жить в&nbsp;любви и&nbsp;вдохновении</li>
         </ul>
         <div class="intro__reviews">
@@ -84,8 +84,10 @@
             <a href="#text-reviews" aria-label="Читать больше текстовых отзывов"></a>
           </div>
           <a class="intro__link-image" href="#video-reviews" data-anchor="1" aria-label="Запустить видео">
-  <!--          добавить 2x-->
-            <img src="img/content/icon-button-play-intro.png" width="24" height="28" aria-hidden="true" alt="Иконка кнопки воспроизведения видео">
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/content/icon-button-play-mobile@1x.png 1x, img/content/icon-button-play-mobile@2x.png 2x">
+              <img src="img/content/icon-button-play-intro@1x.png" srcset="img/content/icon-button-play-intro@2x.png 2x" width="24" height="28" aria-hidden="true" alt="Иконка кнопки воспроизведения видео">
+            </picture>
           </a>
           <a class="intro__link-text" href="#video-reviews" data-anchor="2">Посмотрите видео отзыв</a>
         </div>

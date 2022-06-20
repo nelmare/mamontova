@@ -1,7 +1,8 @@
 import {showTabs} from './modules/tabs';
 import {shadowTextFill} from './modules/shadow-fill';
 import {addTrainersSwiper} from './modules/trainers-swiper';
-import {addReviewsSwiper} from './modules/reviews-swiper';
+import {addTextReviewsSwiper} from './modules/text-reviews-swiper';
+import {addVideoReviewsSwiper} from './modules/video-reviews-swiper';
 import {anchorsScroll} from './modules/anchors-scroll';
 import {validateForm} from './modules/form';
 import {userPhoneMaskFill} from './modules/phone-mask';
@@ -12,17 +13,19 @@ import {onIntroTextContentSet, changeIntroTextContent} from './modules/intro-tex
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
-  // iosVhFix();
+  iosVhFix();
 
   // Modules
-  // showTabs();
+  showTabs();
+  addTextReviewsSwiper();
+  addVideoReviewsSwiper();
   // shadowTextFill();
   // addTrainersSwiper();
   // addReviewsSwiper();
   // anchorsScroll();
   // validateForm();
   // userPhoneMaskFill();
-  // setupVideo();
+  setupVideo();
   onIntroTextContentSet();
   changeIntroTextContent();
 });

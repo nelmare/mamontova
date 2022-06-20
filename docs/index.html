@@ -91,11 +91,11 @@
           </a>
           <a class="intro__link-text" href="#video-reviews" data-anchor="2">Посмотрите видео отзыв</a>
         </div>
-        <ul class="intro__buttons">
-          <li class="intro__buttons-item intro__buttons-item--1">
+        <ul class="intro__buttons contacts">
+          <li class="intro__buttons-item contacts__item contacts__item--1">
             <a href="https://wa.me/<89378449991>">Бесплатная диагностика</a>
           </li>
-          <li class="intro__buttons-item intro__buttons-item--2">
+          <li class="intro__buttons-item contacts__item contacts__item--2">
             <a href="https://wa.me/<89378449991>">Прогноз будущего</a>
           </li>
         </ul>
@@ -151,18 +151,16 @@
         <div class="reviews__tabs tabs">
           <div class="tabs__wrapper">
             <div class="tabs__tablinks">
-              <a id="text-tab" href="#text-reviews" class="tabs__link tabs__link--greece current" data-tab="text-reviews">Текстовые отзывы</a>
-              <a id="video-tab" href="#video-reviews" class="tabs__link tabs__link--albania" data-tab="video-reviews">Видео отзывы</a>
+              <a id="text-tab" href="#text-reviews" class="tabs__link tabs__link--text current" data-tab="text-reviews">Текстовые отзывы</a>
+              <a id="video-tab" href="#video-reviews" class="tabs__link tabs__link--video" data-tab="video-reviews">Видео отзывы</a>
             </div>
           </div>
           <div class="tabs__tabcontent tabs__tabcontent--text-reviews current review" id="text-reviews">
-            <div class="review__swiper swiper">
+            <div class="review__swiper review__swiper--text swiper is-nojs" data-swiper="text-reviews">
               <div class="review__wrapper swiper-wrapper">
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-1-mobile@1x.webp 1x, img/content/text-review-1-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-1@1x.webp 1x, img/content/text-review-1@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-1-mobile@1x.jpg 1x, img/content/text-review-1-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-1@1x.jpg" srcset="img/content/text-review-1@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -170,9 +168,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-2-mobile@1x.webp 1x, img/content/text-review-2-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-2@1x.webp 1x, img/content/text-review-2@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-2-mobile@1x.jpg 1x, img/content/text-review-2-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-2@1x.jpg" srcset="img/content/text-review-2@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -180,9 +176,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-3-mobile@1x.webp 1x, img/content/text-review-3-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-3@1x.webp 1x, img/content/text-review-3@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-3-mobile@1x.jpg 1x, img/content/text-review-3-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-3@1x.jpg" srcset="img/content/text-review-3@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -190,9 +184,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-4-mobile@1x.webp 1x, img/content/text-review-4-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-4@1x.webp 1x, img/content/text-review-4@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-4-mobile@1x.jpg 1x, img/content/text-review-4-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-4@1x.jpg" srcset="img/content/text-review-4@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -200,9 +192,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-5-mobile@1x.webp 1x, img/content/text-review-5-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-5@1x.webp 1x, img/content/text-review-5@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-5-mobile@1x.jpg 1x, img/content/text-review-5-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-5@1x.jpg" srcset="img/content/text-review-5@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -210,9 +200,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-6-mobile@1x.webp 1x, img/content/text-review-6-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-6@1x.webp 1x, img/content/text-review-6@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-6-mobile@1x.jpg 1x, img/content/text-review-6-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-6@1x.jpg" srcset="img/content/text-review-6@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -220,9 +208,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-7-mobile@1x.webp 1x, img/content/text-review-7-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-7@1x.webp 1x, img/content/text-review-7@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-7-mobile@1x.jpg 1x, img/content/text-review-7-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-7@1x.jpg" srcset="img/content/text-review-7@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -230,9 +216,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-8-mobile@1x.webp 1x, img/content/text-review-8-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-8@1x.webp 1x, img/content/text-review-8@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-8-mobile@1x.jpg 1x, img/content/text-review-8-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-8@1x.jpg" srcset="img/content/text-review-8@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -240,9 +224,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-9-mobile@1x.webp 1x, img/content/text-review-9-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-9@1x.webp 1x, img/content/text-review-9@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-9-mobile@1x.jpg 1x, img/content/text-review-9-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-9@1x.jpg" srcset="img/content/text-review-9@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -250,9 +232,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-10-mobile@1x.webp 1x, img/content/text-review-10-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-10@1x.webp 1x, img/content/text-review-10@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-10-mobile@1x.jpg 1x, img/content/text-review-10-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-10@1x.jpg" srcset="img/content/text-review-10@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -260,9 +240,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-11-mobile@1x.webp 1x, img/content/text-review-11-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-11@1x.webp 1x, img/content/text-review-11@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-11-mobile@1x.jpg 1x, img/content/text-review-11-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-11@1x.jpg" srcset="img/content/text-review-11@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -270,9 +248,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-12-mobile@1x.webp 1x, img/content/text-review-12-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-12@1x.webp 1x, img/content/text-review-12@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-12-mobile@1x.jpg 1x, img/content/text-review-12-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-12@1x.jpg" srcset="img/content/text-review-12@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -280,9 +256,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-13-mobile@1x.webp 1x, img/content/text-review-13-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-13@1x.webp 1x, img/content/text-review-13@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-13-mobile@1x.jpg 1x, img/content/text-review-13-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-13@1x.jpg" srcset="img/content/text-review-13@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -290,9 +264,7 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-14-mobile@1x.webp 1x, img/content/text-review-14-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-14@1x.webp 1x, img/content/text-review-14@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-14-mobile@1x.jpg 1x, img/content/text-review-14-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-1@1x.jpg" srcset="img/content/text-review-1@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
@@ -300,48 +272,44 @@
                 </div>
                 <div class="review__slide swiper-slide">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/text-review-15-mobile@1x.webp 1x, img/content/text-review-15-mobile@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/text-review-15@1x.webp 1x, img/content/text-review-15@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/text-review-15-mobile@1x.jpg 1x, img/content/text-review-15-mobile@2x.jpg 2x">
                     <!-- 1х: 364px; 2x: 728px -->
                     <img src="img/content/text-review-15@1x.jpg" srcset="img/content/text-review-15@2x.jpg 2x"
                       width="338" height="522" alt="Видео отзыв">
                   </picture>
                 </div>
               </div>
-              <button class="reviews__button reviews__button--prev swiper-button-prev" type="button"
-                aria-label="Предыдущий слайд">
-                <svg aria-hidden="true" width="24" height="12">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-              <button class="reviews__button reviews__button--next swiper-button-next" type="button"
-                aria-label="Следующий слайд">
-                <svg aria-hidden="true" width="24" height="12">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
             </div>
+            <button class="review__button review__button--prev swiper-button-prev" type="button"
+              aria-label="Предыдущий слайд">
+              <svg aria-hidden="true" width="24" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+            <button class="review__button review__button--next swiper-button-next" type="button"
+              aria-label="Следующий слайд">
+              <svg aria-hidden="true" width="24" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
-          <div class="tabs__tabcontent tabs__tabcontent--video-reviews" id="video-reviews">
-            <div class="review__swiper swiper">
+          <div class="tabs__tabcontent tabs__tabcontent--video-reviews review" id="video-reviews">
+            <div class="review__swiper review__swiper--video swiper is-nojs" data-swiper="video-reviews">
               <div class="review__wrapper swiper-wrapper">
                 <div class="review__slide swiper-slide">
-                  <div class="review__video-wrapper review__video-wrapper-single video">
-                    <div id="player">
+                  <div class="review__video-wrapper review__video-wrapper--single video">
+                    <div class="video__content" id="player">
                       <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
                         <div>
                           <picture>
-                            <!--                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-1-mobile@1x.webp 1x, img/content/video-review-1-mobile@2x.webp 2x">-->
                             <source type="image/webp" srcset="img/content/video-review-1@1x.webp 1x, img/content/video-review-1@2x.webp 2x">
-                            <!--                            <source media="(max-width: 767px)" srcset="img/content/video-review-1-mobile@1x.jpg 1x, img/content/video-review-1-mobile@2x.jpg 2x">-->
                             <!-- 1х: 364px; 2x: 728px -->
                             <img src="img/content/video-review-1@1x.jpg" srcset="img/content/video-review-1@2x.jpg 2x"
                               width="338" height="521" alt="Видео отзыв">
                           </picture>
                         </div>
                       </a>
-                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                      <button class="video__play-button" type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
                         <svg aria-hidden="true" width="34" height="34">
                           <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
                         </svg>
@@ -350,21 +318,19 @@
                   </div>
                 </div>
                 <div class="review__slide swiper-slide">
-                  <div class="review__video-wrapper review__video-wrapper-single video">
-                    <div id="player">
+                  <div class="review__video-wrapper review__video-wrapper--single video">
+                    <div class="video__content" id="player">
                       <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
                         <div>
                           <picture>
-                            <!--                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-1-mobile@1x.webp 1x, img/content/video-review-1-mobile@2x.webp 2x">-->
                             <source type="image/webp" srcset="img/content/video-review-1@1x.webp 1x, img/content/video-review-1@2x.webp 2x">
-                            <!--                            <source media="(max-width: 767px)" srcset="img/content/video-review-1-mobile@1x.jpg 1x, img/content/video-review-1-mobile@2x.jpg 2x">-->
                             <!-- 1х: 338px; 2x: 521px -->
                             <img src="img/content/video-review-1@1x.jpg" srcset="img/content/video-review-1@2x.jpg 2x"
                               width="338" height="521" alt="Видео отзыв">
                           </picture>
                         </div>
                       </a>
-                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                      <button class="video__play-button" type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
                         <svg aria-hidden="true" width="34" height="34">
                           <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
                         </svg>
@@ -373,40 +339,36 @@
                   </div>
                 </div>
                 <div class="review__slide swiper-slide">
-                  <div class="review__video-wrapper review__video-wrapper-double video">
-                    <div id="player">
+                  <div class="review__video-wrapper review__video-wrapper--double video">
+                    <div class="video__content" id="player">
                       <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
                         <div>
                           <picture>
-                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
-                            <!--                            <source type="image/webp" srcset="img/content/video-review-2@1x.webp 1x, img/content/video-review-2@2x.webp 2x">-->
-                            <source media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.jpg 1x, img/content/video-review-2-mobile@2x.jpg 2x">
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-desktop@1x.webp 1x, img/content/video-review-2-desktop@2x.webp 2x">
                             <!-- 1х: 338px; 2x: 521px -->
-                            <!--                            <img src="img/content/video-review-2@1x.jpg" srcset="img/content/video-review-2@2x.jpg 2x"-->
-                            width="338" height="521" alt="Видео отзыв">
+                            <img src="img/content/video-review-2-desktop@1x.jpg" srcset="img/content/video-review-2-desktop@2x.jpg 2x"
+                            width="338" height="191" alt="Видео отзыв">
                           </picture>
                         </div>
                       </a>
-                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                      <button class="video__play-button"  type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
                         <svg aria-hidden="true" width="34" height="34">
                           <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
                         </svg>
                       </button>
                     </div>
-                    <div id="player">
+                    <div class="video__content" id="player">
                       <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
                         <div>
                           <picture>
-                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
-                            <!--                            <source type="image/webp" srcset="img/content/video-review-2@1x.webp 1x, img/content/video-review-2@2x.webp 2x">-->
-                            <source media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.jpg 1x, img/content/video-review-2-mobile@2x.jpg 2x">
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-desktop@1x.webp 1x, img/content/video-review-2-desktop@2x.webp 2x">
                             <!-- 1х: 338px; 2x: 521px -->
-                            <!--                            <img src="img/content/video-review-2@1x.jpg" srcset="img/content/video-review-2@2x.jpg 2x"-->
-                            width="338" height="521" alt="Видео отзыв">
+                            <img src="img/content/video-review-2-desktop@1x.jpg" srcset="img/content/video-review-2-desktop@2x.jpg 2x"
+                              width="338" height="191" alt="Видео отзыв">
                           </picture>
                         </div>
                       </a>
-                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                      <button class="video__play-button" type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
                         <svg aria-hidden="true" width="34" height="34">
                           <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
                         </svg>
@@ -415,53 +377,57 @@
                   </div>
                 </div>
                 <div class="review__slide swiper-slide">
-                  <div class="review__video-wrapper review__video-wrapper-double video">
-                    <div id="player">
+                  <div class="review__video-wrapper review__video-wrapper--double video">
+                    <div class="video__content" id="player">
                       <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
                         <div>
                           <picture>
-                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
-                            <source type="image/webp" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
-                            <source media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.jpg 1x, img/content/video-review-2-mobile@2x.jpg 2x">
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-desktop@1x.webp 1x, img/content/video-review-2-desktop@2x.webp 2x">
                             <!-- 1х: 338px; 2x: 521px -->
-                            <img src="img/content/video-review-2-mobile@1x.jpg" srcset="img/content/video-review-2-mobile@2x.jpg 2x"
-                              width="338" height="521" alt="Видео отзыв">
+                            <img src="img/content/video-review-2-desktop@1x.jpg" srcset="img/content/video-review-2-desktop@2x.jpg 2x"
+                              width="338" height="191" alt="Видео отзыв">
                           </picture>
                         </div>
                       </a>
-                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео"></button>
+                      <button class="video__play-button" type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                        <svg aria-hidden="true" width="34" height="34">
+                          <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
+                        </svg>
+                      </button>
                     </div>
-                    <div id="player">
+                    <div class="video__content" id="player">
                       <a class="video__link" href="#" data-video="link" aria-label="Видео отзыв">
                         <div>
                           <picture>
-                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.webp 1x, img/content/video-review-2-mobile@2x.webp 2x">
-                            <source type="image/webp" srcset="img/content/video-review-2@1x.webp 1x, img/content/video-review-2@2x.webp 2x">
-                            <source media="(max-width: 767px)" srcset="img/content/video-review-2-mobile@1x.jpg 1x, img/content/video-review-2-mobile@2x.jpg 2x">
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-review-2-desktop@1x.webp 1x, img/content/video-review-2-desktop@2x.webp 2x">
                             <!-- 1х: 338px; 2x: 521px -->
-                            <img src="img/content/video-review-2@1x.jpg" srcset="img/content/video-review-2@2x.jpg 2x"
-                              width="338" height="521" alt="Видео отзыв">
+                            <img src="img/content/video-review-2-desktop@1x.jpg" srcset="img/content/video-review-2-desktop@2x.jpg 2x"
+                              width="338" height="191" alt="Видео отзыв">
                           </picture>
                         </div>
                       </a>
-                      <button type="button" tabindex="0" data-video="button" aria-label="Запустить видео"></button>
+                      <button class="video__play-button" type="button" tabindex="0" data-video="button" aria-label="Запустить видео">
+                        <svg aria-hidden="true" width="34" height="34">
+                          <use xlink:href="img/sprite_auto.svg#icon-triangle-play"></use>
+                        </svg>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <button class="reviews__button reviews__button--prev swiper-button-prev" type="button"
-                aria-label="Предыдущий слайд">
-                <svg aria-hidden="true" width="24" height="12">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
-              <button class="reviews__button reviews__button--next swiper-button-next" type="button"
-                aria-label="Следующий слайд">
-                <svg aria-hidden="true" width="24" height="12">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
-                </svg>
-              </button>
             </div>
+            <button class="review__button review__button--prev swiper-button-prev" type="button"
+              aria-label="Предыдущий слайд">
+              <svg aria-hidden="true" width="24" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+            <button class="review__button review__button--next swiper-button-next" type="button"
+              aria-label="Следующий слайд">
+              <svg aria-hidden="true" width="24" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>

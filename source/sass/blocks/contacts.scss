@@ -1,129 +1,105 @@
-//.contacts {
-//  width: 50%;
-//
-//  @include vp-1199 {
-//    width: 100%;
-//  }
-//}
-//
-//.contacts__container {
-//  padding: 70px 79px 40px 120px;
-//
-//  @include vp-1199 {
-//    padding: 70px 79px 40px 133px;
-//    max-width: 768px;
-//    width: 768px;
-//  }
-//
-//  @include vp-767 {
-//    padding: 70px 15px 40px 15px;
-//    max-width: 600px;
-//    width: 600px;
-//    margin-left: 0;
-//  }
-//
-//  @include vp-479 {
-//    max-width: none;
-//    width: auto;
-//  }
-//}
-//
-//.contacts h2 {
-//  margin: 0;
-//  font-family: $ff-bebasneue;
-//  font-size: 49px;
-//  line-height: 49px;
-//  letter-spacing: 0.03em;
-//  color: $color-default-sapphire;
-//  margin-bottom: 38px;
-//
-//  @include vp-1199 {
-//    font-size: 42px;
-//    line-height: 42px;
-//    margin-bottom: 32px;
-//  }
-//
-//  @include vp-767 {
-//    font-size: 32px;
-//    line-height: 32px;
-//    margin-bottom: 34px;
-//  }
-//}
-//
-//.contacts address {
-//  column-count: 2;
-//  column-gap: 96px;
-//  font-style: normal;
-//  position: relative;
-//
-//  &::before {
-//    content: "";
-//    width: 1px;
-//    height: 102px;
-//    position: absolute;
-//    left: 48.5%;
-//    top: 50%;
-//    transform: translate(-50%, -50%);
-//    background-color: $color-light-slate-grey;
-//  }
-//
-//  @include vp-1199 {
-//    column-gap: 72px;
-//
-//    &::before {
-//      left: 48%;
-//      height: 129px;
-//      top: 43.4%;
-//    }
-//  }
-//
-//  @include vp-479 {
-//    column-count: 1;
-//
-//    &::before {
-//      display: none;
-//    }
-//  }
-//}
-//
-//.contacts p {
-//  margin: 0;
-//  padding: 0;
-//  margin-bottom: 18px;
-//  padding-left: 4px;
-//  font-weight: 700;
-//
-//  &:nth-child(2n) {
-//    margin-top: -3px;
-//  }
-//
-//  @include vp-1199 {
-//    font-size: 20px;
-//    line-height: 30px;
-//    padding-left: 0;
-//  }
-//}
-//
-//.contacts a {
-//  display: block;
-//  margin-bottom: 21px;
-//  color: $color-default-sapphire;
-//  font-weight: 400;
-//  font-size: 14px;
-//  line-height: 21px;
-//  margin-top: 3px;
-//
-//  @include vp-1199 {
-//    font-size: 18px;
-//    line-height: 27px;
-//    margin-top: 6px;
-//  }
-//
-//  @include vp-767 {
-//    margin-bottom: 21px;
-//  }
-//
-//  &:hover {
-//    opacity: 0.8;
-//  }
-//}
+.contacts {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  column-gap: 4.5%;
+  grid-template-columns: 49.4% 46%;
+  max-width: 774px;
+  min-width: 774px;
+  width: 66.8%;
+  margin: 0 auto 7px auto;
+
+  @include vp-1199 {
+    min-width: auto;
+    width: 84%;
+  }
+
+  @include vp-1023 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 27px;
+    column-gap: 0;
+  }
+}
+
+.contacts li {
+  font-family: $ff-montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.08em;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-858 {
+    font-size: 13px;
+  }
+}
+
+.contacts__item a {
+  border-radius: 10px / 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 37px 43px 37px 43px;
+  text-transform: uppercase;
+  width: 100%;
+  position: relative;
+
+  @include vp-767 {
+    padding: 31px 31px 30px 21px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: 100%;
+    border-radius: 10px / 20%;
+    z-index: -1;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.contacts__item--1 {
+  max-width: 382px;
+
+  @include vp-767 {
+    max-width: 100%;
+  }
+}
+
+.contacts__item--1 a {
+  color: $color-medium-wood;
+  background: linear-gradient(95.94deg, rgba(255, 255, 255, 0) 5.03%, rgba(255, 255, 255, 0.47) 53.24%, rgba(255, 255, 255, 0) 102.54%), linear-gradient(94.61deg, #FFEFBC -9.8%, #FFE1A5 101.57%), linear-gradient(93.78deg, #E6E6E6 -17.21%, #E3E3E3 85.63%);
+
+  &::after {
+    background-color: $color-marzipan;
+  }
+}
+
+.contacts__item--2 {
+  max-width: 357px;
+
+  @include vp-767 {
+    max-width: 100%;
+  }
+}
+
+.contacts__item--2 a {
+  color: $color-rosy-brown;
+  background: linear-gradient(93.5deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 46.7%, rgba(255, 255, 255, 0) 94.46%), linear-gradient(140.94deg, #F2DEDC 22.38%, #F4DCD5 80.4%);
+
+  &::after {
+    background-color: $color-vanilla-ice;
+  }
+}

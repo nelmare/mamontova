@@ -13,9 +13,9 @@ const setupVideo = () => {
     button.remove();
     video.classList.add('video--enabled');
     new YT.Player('player', {
-      height: '285',
-      width: '544',
-      videoId: '9TZXsZItgdw',
+      height: '338',
+      width: '522',
+      videoId: '7ugZ3PzuPZA',
       events: {
         onReady: (e) => e.target.playVideo(),
       },

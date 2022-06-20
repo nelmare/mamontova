@@ -2148,6 +2148,7 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  z-index: 2;
 }
 
 .tabs__link {
@@ -2324,6 +2325,7 @@ button,
 
 .reviews .container {
   position: relative;
+  z-index: 2;
 }
 
 .reviews h3 {
@@ -2437,6 +2439,90 @@ button,
   right: -70px;
 }
 
+.page-footer {
+  padding-top: 32px;
+  padding-bottom: 41px;
+  color: #ffffff;
+}
+
+.page-footer__container {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.page-footer__column-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 71.9%;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  margin-top: 13px;
+}
+
+.page-footer__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page-footer__logo {
+  margin-right: 40px;
+  width: 89px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.page-footer__logo:hover {
+  opacity: 1;
+}
+
+.page-footer__logo img {
+  width: 89px;
+  height: 20px;
+}
+
+.page-footer li {
+  margin-right: 40px;
+}
+
+.page-footer li:hover,
+.page-footer li:focus {
+  opacity: 0.7;
+}
+
+.page-footer__nav-list a {
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2456,6 +2542,7 @@ button,
     height: 973px;
     top: 0;
     left: 0;
+    z-index: 1;
     background-image: url("../img/content/reviews-woman-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -2473,6 +2560,7 @@ button,
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center top -105px;
+    z-index: 1;
   }
 }
 
@@ -2545,6 +2633,31 @@ button,
     height: 644px;
     margin-top: -123px;
     margin-left: 0;
+  }
+
+  .page-footer__column-wrapper {
+    width: 78.6%;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+
+  .page-footer__logo {
+    margin-right: 182px;
+    width: 82px;
+    height: 18px;
+  }
+
+  .page-footer__logo img {
+    width: 82px;
+    height: 18px;
+  }
+
+  .page-footer li {
+    margin-right: 30px;
+  }
+
+  .page-footer li:last-child {
+    margin-right: 0;
   }
 }
 
@@ -2666,6 +2779,15 @@ button,
   .reviews h3 {
     font-size: 42px;
     line-height: 51px;
+  }
+
+  .page-footer {
+    padding-top: 36px;
+    padding-bottom: 45px;
+  }
+
+  .page-footer__logo {
+    margin-right: 62px;
   }
 }
 
@@ -3088,6 +3210,57 @@ button,
   .review__button--next {
     right: 25%;
   }
+
+  .page-footer {
+    padding-top: 51px;
+    padding-bottom: 40px;
+  }
+
+  .page-footer__column-wrapper {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    display: block;
+    margin-top: 0;
+    -webkit-column-gap: 76px;
+    -moz-column-gap: 76px;
+    column-gap: 76px;
+    width: auto;
+    margin-right: 46px;
+  }
+
+  .page-footer__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 15px;
+    margin-right: 0;
+    margin-top: 0;
+    width: 68px;
+    height: 24px;
+  }
+
+  .page-footer__logo img {
+    width: 68px;
+    height: 15px;
+  }
+
+  .page-footer li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .page-footer__nav-list a {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -3108,5 +3281,12 @@ button,
   .intro__reviews {
     width: 72%;
     padding-top: 25px;
+  }
+
+  .page-footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }

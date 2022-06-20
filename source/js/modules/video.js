@@ -4,7 +4,7 @@ const setupVideo = () => {
   const firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  let video = document.querySelector('.video');
+  let video = document.querySelector('[data-video="video-wrapper"]');
   let link = video.querySelector('[data-video="link"]');
   let button = video.querySelector('[data-video="button"]');
 

@@ -123,6 +123,11 @@
   font-size: 18px;
   line-height: 21px;
   color: $color-whisper;
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__meta {

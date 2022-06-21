@@ -6,6 +6,11 @@ const anchorsScroll = () => {
       evt.preventDefault();
 
       const blockID = anchor.getAttribute('href').substr(1);
+      const openTab = anchor.getAttribute('data-tab');
+
+      if (openTab) {
+        document.getElementById(openTab).click();
+      }
 
       document.getElementById(blockID).scrollIntoView({
         behavior: 'smooth',

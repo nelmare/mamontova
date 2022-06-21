@@ -315,6 +315,11 @@
   margin: -10px auto 15px 0;
   position: relative;
 
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+
   @include vp-767 {
     display: none;
   }
@@ -380,6 +385,11 @@
   align-items: center;
   //margin-left: 20px;
 
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+
   @include vp-1023 {
     width: 101px;
     height: 97px;
@@ -437,6 +447,11 @@
   //display: flex;
   //align-items: center;
   //justify-content: center;
+
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
 
   @include vp-1023 {
     font-size: 16px;

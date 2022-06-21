@@ -21,6 +21,8 @@
   & .menu-item {
     padding: 0;
     margin-right: 31px;
+    max-width: 32px;
+    max-height: 32px;
 
     &:last-child {
       margin-right: 0;
@@ -29,5 +31,21 @@
     @include vp-767 {
       margin-right: 24px;
     }
+  }
+
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & a:hover,
+  & a:focus {
+    opacity: 0.6;
+  }
+
+  & img {
+    max-width: 34px;
+    max-height: 33px;
   }
 }

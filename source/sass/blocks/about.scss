@@ -106,8 +106,8 @@
   font-weight: 400;
   font-size: 46px;
   line-height: 55px;
-  display: flex;
-  align-items: center;
+  //display: flex;
+  //align-items: center;
   letter-spacing: 0.045em;
   text-transform: uppercase;
   background: linear-gradient(265.12deg, rgba(255, 255, 255, 0) 24.67%, rgba(255, 255, 255, 0) 27.37%, rgba(255, 255, 255, 0.39) 46.56%, rgba(255, 255, 255, 0) 67.13%), $color-oyster-pink;
@@ -117,6 +117,7 @@
   text-fill-color: transparent;
   width: 347px;
   margin-bottom: 9px;
+  color: transparent;
 
   @include vp-1023 {
     font-size: 42px;

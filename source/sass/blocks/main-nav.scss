@@ -29,6 +29,12 @@
   background: linear-gradient(87.08deg, #FFEFBC -210.83%, #EBC77E 123.75%);
   box-shadow: inset 0 4.04px 14.8px $color-floral-white2;
   border-radius: 6.73px;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
 
   @include vp-767 {
     width: 33px;

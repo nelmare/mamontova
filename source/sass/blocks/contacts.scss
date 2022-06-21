@@ -68,6 +68,11 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  &:hover::after,
+  &:active::after {
+    opacity: 0.5;
+  }
 }
 
 .contacts__item--1 {

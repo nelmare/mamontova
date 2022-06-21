@@ -2070,7 +2070,7 @@ html {
   flex-wrap: nowrap;
   padding: 0;
   position: relative;
-  width: 496px;
+  width: 497px;
   margin: 0 auto 78px auto;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -3156,7 +3156,7 @@ html {
   }
 
   .tabs__tablinks {
-    width: 273px;
+    width: 274px;
     margin-bottom: 43px;
   }
 

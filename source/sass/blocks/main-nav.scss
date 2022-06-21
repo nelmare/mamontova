@@ -26,7 +26,7 @@
   justify-content: center;
   width: 39px;
   height: 40px;
-  background: linear-gradient(87.08deg, #FFEFBC -210.83%, #EBC77E 123.75%);
+  background: linear-gradient(87.08deg, #ffefbc -210.83%, #ebc77e 123.75%);
   box-shadow: inset 0 4.04px 14.8px $color-floral-white2;
   border-radius: 6.73px;
   cursor: pointer;
@@ -49,7 +49,6 @@
   align-items: center;
   justify-content: center;
   fill: $color-floral-white;
-  //box-shadow: 0 6.19268px 6.19268px rgba(232, 196, 124, 0.81);
 
   @include vp-767 {
     max-width: 21px;

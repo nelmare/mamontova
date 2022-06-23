@@ -1277,9 +1277,6 @@ button.swiper-pagination-bullet {
 html {
   margin: 0;
   padding: 0;
-}
-
-html {
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -3170,6 +3167,10 @@ html {
 
   .tabs__link:last-child {
     margin-right: 0;
+  }
+
+  .tabs__link--text {
+    width: 143px;
   }
 
   .tabs__link--video {

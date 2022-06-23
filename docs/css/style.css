@@ -2094,6 +2094,9 @@ html {
   justify-content: center;
   text-decoration: none;
   min-height: 51px;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .tabs__link:last-child {

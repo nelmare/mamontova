@@ -1733,6 +1733,7 @@ html {
 }
 
 .intro__link-text {
+  margin: 0;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4/5;
@@ -1743,16 +1744,10 @@ html {
   max-width: 165px;
   padding-left: 25px;
   padding-top: 7px;
-  text-decoration: none;
   font-size: 18px;
   line-height: 24px;
   position: relative;
   color: rgba(136, 136, 136, 0.78);
-}
-
-.intro__link-text:hover,
-.intro__link-text:active {
-  opacity: 0.8;
 }
 
 .intro__link-text::after {
@@ -2101,10 +2096,15 @@ html {
   -ms-flex-pack: center;
   justify-content: center;
   text-decoration: none;
+  min-height: 51px;
 }
 
 .tabs__link:last-child {
   margin-right: 0;
+}
+
+.tabs__link--text {
+  width: 257px;
 }
 
 .tabs__link--video {
@@ -2887,7 +2887,7 @@ html {
 
   .wrapper::before {
     background-image: url("../img/content/main-foto-clouds-mobile2@1x.png");
-    top: -26.5vw;
+    top: -28.5vw;
   }
 
   .container {
@@ -3165,6 +3165,7 @@ html {
     line-height: 18px;
     padding: 4px 6px 4px 9px;
     margin-right: 10px;
+    min-height: 28px;
   }
 
   .tabs__link:last-child {
@@ -3188,7 +3189,7 @@ html {
   .reviews {
     background-image: url("../img/content/reviews-back-mobile@1x.png");
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
   }
 
   .reviews::before,
@@ -3311,13 +3312,49 @@ html {
   }
 }
 
+@media (max-width: 726px) {
+  .wrapper::before {
+    top: -31.5vw;
+  }
+}
+
+@media (max-width: 677px) {
+  .wrapper::before {
+    top: -25.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper::before {
+    top: -28.5vw;
+  }
+}
+
+@media (max-width: 558px) {
+  .wrapper::before {
+    top: -31vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper::before {
+    top: -35vw;
+  }
+}
+
 @media (max-width: 479px) {
   .wrapper::before {
-    top: -30vw;
+    top: -40vw;
   }
 
   .intro__reviews {
     width: 72%;
-    padding-top: 25px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 409px) {
+  .wrapper::before {
+    top: -48vw;
   }
 }

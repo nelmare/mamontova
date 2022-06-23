@@ -50,7 +50,7 @@
 
     background-image: url("../img/content/reviews-back-mobile@1x.png");
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
 
     @include retina {
       background-image: url("../img/content/reviews-back-mobile@2x.png");

@@ -32,11 +32,35 @@
 
     @include vp-767 {
       background-image: url("../img/content/main-foto-clouds-mobile2@1x.png");
-      top: -26.5vw;
+      top: -28.5vw;
+    }
+
+    @media (max-width: 726px) {
+      top: -31.5vw;
+    }
+
+    @media (max-width: 677px) {
+      top: -25.5vw;
+    }
+
+    @media (max-width: 600px) {
+      top: -28.5vw;
+    }
+
+    @media (max-width: 558px) {
+      top: -31vw;
+    }
+
+    @media (max-width: 500px) {
+      top: -35vw;
     }
 
     @include vp-479 {
-      top: -30vw;
+      top: -40vw;
+    }
+
+    @include vp-409 {
+      top: -48vw;
     }
   }
 

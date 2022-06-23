@@ -269,7 +269,7 @@
 
   @include vp-479 {
     width: 72%;
-    padding-top: 25px;
+    padding-top: 50px;
   }
 }
 
@@ -385,6 +385,7 @@
 }
 
 .intro__link-text {
+  margin: 0;
   grid-column: 4/5;
   grid-row: 1/-1;
   align-self: center;
@@ -392,16 +393,10 @@
   max-width: 165px;
   padding-left: 25px;
   padding-top: 7px;
-  text-decoration: none;
   font-size: 18px;
   line-height: 24px;
   position: relative;
   color: $color-grey-transparent78;
-
-  &:hover,
-  &:active {
-    opacity: 0.8;
-  }
 
   @include vp-1023 {
     font-size: 16px;

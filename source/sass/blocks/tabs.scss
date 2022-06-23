@@ -32,6 +32,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  min-height: 51px;
 
   &:last-child {
     margin-right: 0;
@@ -42,10 +43,19 @@
     line-height: 18px;
     padding: 4px 6px 4px 9px;
     margin-right: 10px;
+    min-height: 28px;
 
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.tabs__link--text {
+  width: 257px;
+
+  @include vp-767 {
+
   }
 }
 

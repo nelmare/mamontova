@@ -17,10 +17,50 @@
 
   @include vp-767 {
     background-image: url("../img/content/back-mobile@1x.png");
-    background-size: cover;
+    background-position: center top 11%;
 
     @include retina {
       background-image: url("../img/content/back-mobile@2x.png");
     }
+  }
+
+  @media (max-width: 677px) {
+    background-position: center top 13%;
+  }
+
+  @media (max-width: 558px) {
+    background-position: center top 15%;
+  }
+
+  @media (max-width: 479px) {
+    background-position: center top 26%;
+  }
+
+  @media (max-width: 455px) {
+    background-position: center top 57%;
+  }
+
+  @media (max-width: 443px) {
+    background-position: center top 177%;
+  }
+
+  @media (max-width: 439px) {
+    background-position: center top -34px;
+  }
+
+  @media (max-width: 425px) {
+    background-position: center top -19px;
+  }
+
+  @media (max-width: 414px) {
+    background-position: center top -11px;
+  }
+
+  @media (max-width: 405px) {
+    background-position: center top -6px;
+  }
+
+  @media (max-width: 398px) {
+    background-position: center top 0;
   }
 }

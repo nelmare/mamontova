@@ -31,38 +31,86 @@
     }
 
     @include vp-767 {
-      background-image: url("../img/content/main-foto-clouds-mobile2@1x.png");
-      top: -28.5vw;
+      //background-image: url("../img/content/main-foto-clouds-mobile2@1x.png");
+      background-image: url("../img/content/clouds-mobile3@1x.png");
+      background-size: 100% auto;
+      top: -13.5vw;
     }
+
+    //@media (max-width: 726px) {
+    //  top: -31.5vw;
+    //}
+
+    //@media (max-width: 677px) {
+    //  top: -25.5vw;
+    //}
+    //
+    //@media (max-width: 600px) {
+    //  top: -28.5vw;
+    //}
+
+    //@media (max-width: 558px) {
+    //  top: -31vw;
+    //}
+    //
+    //@media (max-width: 500px) {
+    //  top: -35vw;
+    //}
+    //
+    @include vp-479 {
+      top: -15.5vw;
+    }
+
+    @media (max-width: 455px) {
+      top: -18.5vw;
+    }
+
+    //@media (max-width: 405px) {
+    //  top: -48vw;
+    ////  top: -27vw;
+    //}
+  }
+
+  &::after {
+    @include vp-767 {
+    content: "";
+    position: absolute;
+    width: 1920px;
+    height: 1749px;
+    z-index: 2;
+    top: -16vw;
+    left: 97%;
+    transform: translateX(-50%);
+    background-image: url("../img/content/clouds-mobile2@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
 
     @media (max-width: 726px) {
-      top: -31.5vw;
-    }
-
-    @media (max-width: 677px) {
-      top: -25.5vw;
-    }
-
-    @media (max-width: 600px) {
-      top: -28.5vw;
+      top: -19vw;
     }
 
     @media (max-width: 558px) {
-      top: -31vw;
+      top: -17vw;
+      left: 112%;
     }
 
-    @media (max-width: 500px) {
-      top: -35vw;
+    @media (max-width: 479px) {
+      top: -41vw;
+      left: 50%;
     }
 
-    @include vp-479 {
-      top: -40vw;
+    @media (max-width: 445px) {
+      top: -45vw;
     }
 
-    @include vp-409 {
+    @media (max-width: 405px) {
       top: -48vw;
+      //  top: -27vw;
     }
-  }
+
+
+}
 
   header,
   footer {

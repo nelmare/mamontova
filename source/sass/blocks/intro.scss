@@ -210,7 +210,7 @@
 
   &::before {
     right: -55px;
-    background-image: url("../img/svg/arrow-big-left.svg");
+    background-image: url("../assets/img/svg/arrow-big-left.svg");
 
     @include vp-858 {
       right: -25px;
@@ -232,7 +232,7 @@
 
   &::before {
     left: -55px;
-    background-image: url("../img/svg/arrow-big-right.svg");
+    background-image: url("../assets/img/svg/arrow-big-right.svg");
 
     @include vp-858 {
       left: -25px;
@@ -443,7 +443,7 @@
     z-index: 5;
     bottom: -19px;
     left: -30px;
-    background-image: url("../img/svg/arrow-small-left.svg");
+    background-image: url("../assets/img/svg/arrow-small-left.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -452,7 +452,7 @@
     }
 
     @include vp-767 {
-      background-image: url("../img/svg/arrow-small-right.svg");
+      background-image: url("../assets/img/svg/arrow-small-right.svg");
       left: 89px;
       width: 60px;
       height: 45px;

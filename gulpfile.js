@@ -59,10 +59,10 @@ const svgo = () => {
 };
 
 const sprite = () => {
-  return gulp.src('source/img/sprite/*.svg')
+  return gulp.src('source/assets/img/sprite/*.svg')
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename('sprite_auto.svg'))
-      .pipe(gulp.dest('docs/img'));
+      .pipe(gulp.dest('docs/assets/img'));
 };
 
 const copySvg = () => {
@@ -81,6 +81,7 @@ const copy = () => {
     'source/fonts/**',
     'source/img/**',
     'source/favicon/**',
+    'source/assets/**',
   ], {
     base: 'source',
   })

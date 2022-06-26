@@ -13,13 +13,13 @@
       top: 0;
       left: 0;
       z-index: 1;
-      background-image: url("../img/content/reviews-woman-desktop@1x.png");
+      background-image: url("../assets/img/content/reviews-woman-desktop@1x.png");
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-position: center top -105px;
 
       @include retina {
-        background-image: url("../img/content/reviews-woman-desktop@2x.png");
+        background-image: url("../assets/img/content/reviews-woman-desktop@2x.png");
       }
     }
 
@@ -30,14 +30,14 @@
       height: 973px;
       top: 0;
       right: 0;
-      background-image: url("../img/content/reviews-lion-desktop@1x.png");
+      background-image: url("../assets/img/content/reviews-lion-desktop@1x.png");
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-position: center top -105px;
       z-index: 1;
 
       @include retina {
-        background-image: url("../img/content/reviews-lion-desktop@2x.png");
+        background-image: url("../assets/img/content/reviews-lion-desktop@2x.png");
       }
     }
   }
@@ -48,12 +48,12 @@
       display: none;
     }
 
-    background-image: url("../img/content/reviews-back-mobile@1x.png");
+    background-image: url("../assets/img/content/reviews-back-mobile@1x.png");
     background-size: cover;
     background-position: center center;
 
     @include retina {
-      background-image: url("../img/content/reviews-back-mobile@2x.png");
+      background-image: url("../assets/img/content/reviews-back-mobile@2x.png");
     }
   }
 }

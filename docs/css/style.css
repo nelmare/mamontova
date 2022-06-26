@@ -1208,7 +1208,7 @@ button.swiper-pagination-bullet {
   font-weight: 900;
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/roboto-black.woff2") format("woff2"), url("../fonts/roboto-black.woff") format("woff");
+  src: url("../assets/fonts/roboto-black.woff2") format("woff2"), url("../assets/fonts/roboto-black.woff") format("woff");
 }
 
 @font-face {
@@ -1216,7 +1216,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff");
+  src: url("../assets/fonts/roboto-bold.woff2") format("woff2"), url("../assets/fonts/roboto-bold.woff") format("woff");
 }
 
 @font-face {
@@ -1224,7 +1224,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/roboto-medium.woff2") format("woff2"), url("../fonts/roboto-medium.woff") format("woff");
+  src: url("../assets/fonts/roboto-medium.woff2") format("woff2"), url("../assets/fonts/roboto-medium.woff") format("woff");
 }
 
 @font-face {
@@ -1232,7 +1232,7 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff");
+  src: url("../assets/fonts/roboto-regular.woff2") format("woff2"), url("../assets/fonts/roboto-regular.woff") format("woff");
 }
 
 @font-face {
@@ -1240,7 +1240,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
+  src: url("../assets/fonts/montserrat-bold.woff2") format("woff2"), url("../assets/fonts/montserrat-bold.woff") format("woff");
 }
 
 @font-face {
@@ -1248,7 +1248,7 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
+  src: url("../assets/fonts/montserrat-semibold.woff2") format("woff2"), url("../assets/fonts/montserrat-semibold.woff") format("woff");
 }
 
 @font-face {
@@ -1256,7 +1256,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
+  src: url("../assets/fonts/montserrat-medium.woff2") format("woff2"), url("../assets/fonts/montserrat-medium.woff") format("woff");
 }
 
 @font-face {
@@ -1264,7 +1264,7 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   font-family: "Colus";
   font-display: swap;
-  src: url("../fonts/colus-regular.woff2") format("woff2"), url("../fonts/colus-regular.woff") format("woff");
+  src: url("../assets/fonts/colus-regular.woff2") format("woff2"), url("../assets/fonts/colus-regular.woff") format("woff");
 }
 
 *,
@@ -1314,7 +1314,7 @@ html {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-image: url("../img/content/main-foto-clouds-top.png");
+  background-image: url("../assets/img/content/main-foto-clouds-top.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top 35px;
@@ -1583,7 +1583,7 @@ html {
 
 .intro__description-wrapper li:nth-child(1n)::before {
   right: -55px;
-  background-image: url("../img/svg/arrow-big-left.svg");
+  background-image: url("../assets/img/svg/arrow-big-left.svg");
 }
 
 .intro__description-wrapper li:nth-child(2n) {
@@ -1593,7 +1593,7 @@ html {
 
 .intro__description-wrapper li:nth-child(2n)::before {
   left: -55px;
-  background-image: url("../img/svg/arrow-big-right.svg");
+  background-image: url("../assets/img/svg/arrow-big-right.svg");
 }
 
 .intro__reviews {
@@ -1746,7 +1746,7 @@ html {
   z-index: 5;
   bottom: -19px;
   left: -30px;
-  background-image: url("../img/svg/arrow-small-left.svg");
+  background-image: url("../assets/img/svg/arrow-small-left.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -2083,7 +2083,7 @@ html {
 
 .about__results-wrapper li::after {
   content: "";
-  background-image: url("../img/svg/tick-in-round.svg");
+  background-image: url("../assets/img/svg/tick-in-round.svg");
   background-size: 19px 20px;
   background-repeat: no-repeat;
   display: inline-block;
@@ -2646,7 +2646,7 @@ html {
 
 @media (min-width: 768px) {
   .page-body {
-    background-image: url("../img/content/back@1x.png");
+    background-image: url("../assets/img/content/back@1x.png");
   }
 
   .reviews::before {
@@ -2657,7 +2657,7 @@ html {
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: url("../img/content/reviews-woman-desktop@1x.png");
+    background-image: url("../assets/img/content/reviews-woman-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center top -105px;
@@ -2670,7 +2670,7 @@ html {
     height: 973px;
     top: 0;
     right: 0;
-    background-image: url("../img/content/reviews-lion-desktop@1x.png");
+    background-image: url("../assets/img/content/reviews-lion-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center top -105px;
@@ -2680,15 +2680,15 @@ html {
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .page-body {
-    background-image: url("../img/content/back@2x.png");
+    background-image: url("../assets/img/content/back@2x.png");
   }
 
   .reviews::before {
-    background-image: url("../img/content/reviews-woman-desktop@2x.png");
+    background-image: url("../assets/img/content/reviews-woman-desktop@2x.png");
   }
 
   .reviews::after {
-    background-image: url("../img/content/reviews-lion-desktop@2x.png");
+    background-image: url("../assets/img/content/reviews-lion-desktop@2x.png");
   }
 }
 
@@ -2954,7 +2954,7 @@ html {
   }
 
   .wrapper::before {
-    background-image: url("../img/content/clouds-mobile3@1x.png");
+    background-image: url("../assets/img/content/clouds-mobile3@1x.png");
     background-size: 100% auto;
     top: -13.5vw;
   }
@@ -2970,7 +2970,7 @@ html {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    background-image: url("../img/content/clouds-mobile2@1x.png");
+    background-image: url("../assets/img/content/clouds-mobile2@1x.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -2981,7 +2981,7 @@ html {
   }
 
   .page-body {
-    background-image: url("../img/content/back-mobile@1x.png");
+    background-image: url("../assets/img/content/back-mobile@1x.png");
     background-position: center top 13%;
   }
 
@@ -3125,7 +3125,7 @@ html {
   }
 
   .intro__link-text::after {
-    background-image: url("../img/svg/arrow-small-right.svg");
+    background-image: url("../assets/img/svg/arrow-small-right.svg");
     left: 89px;
     width: 60px;
     height: 45px;
@@ -3302,7 +3302,7 @@ html {
   }
 
   .reviews {
-    background-image: url("../img/content/reviews-back-mobile@1x.png");
+    background-image: url("../assets/img/content/reviews-back-mobile@1x.png");
     background-size: cover;
     background-position: center center;
   }
@@ -3419,11 +3419,11 @@ html {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .page-body {
-    background-image: url("../img/content/back-mobile@2x.png");
+    background-image: url("../assets/img/content/back-mobile@2x.png");
   }
 
   .reviews {
-    background-image: url("../img/content/reviews-back-mobile@2x.png");
+    background-image: url("../assets/img/content/reviews-back-mobile@2x.png");
   }
 }
 

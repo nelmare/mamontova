@@ -14,7 +14,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/content/main-foto-clouds-top.png");
+    background-image: url("../assets/img/content/main-foto-clouds-top.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top 35px;
@@ -39,7 +39,7 @@
     }
 
     @include vp-767 {
-      background-image: url("../img/content/clouds-mobile3@1x.png");
+      background-image: url("../assets/img/content/clouds-mobile3@1x.png");
       background-size: 100% auto;
       top: -13.5vw;
     }
@@ -67,7 +67,7 @@
       top: 95px;
       left: 50%;
       transform: translateX(-50%);
-      background-image: url("../img/content/clouds-mobile2@1x.png");
+      background-image: url("../assets/img/content/clouds-mobile2@1x.png");
       background-repeat: no-repeat;
       background-size: 100% auto;
     }

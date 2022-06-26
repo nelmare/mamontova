@@ -8,19 +8,19 @@
   background-position: center top;
 
   @media (min-width: 768px) {
-    background-image: url("../img/content/back@1x.png");
+    background-image: url("../assets/img/content/back@1x.png");
 
     @include retina {
-      background-image: url("../img/content/back@2x.png");
+      background-image: url("../assets/img/content/back@2x.png");
     }
   }
 
   @include vp-767 {
-    background-image: url("../img/content/back-mobile@1x.png");
+    background-image: url("../assets/img/content/back-mobile@1x.png");
     background-position: center top 13%;
 
     @include retina {
-      background-image: url("../img/content/back-mobile@2x.png");
+      background-image: url("../assets/img/content/back-mobile@2x.png");
     }
   }
 

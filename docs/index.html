@@ -49,18 +49,11 @@
   </header>
   <main class="page-main">
     <section class="intro">
-<!--      <div class="cl-new">-->
-<!--        <img src="img/content/cl-new-top2@1x.png" width="1920" height="755" alt="Перейти к отзывам" usemap="#reviews">-->
-<!--        <map name="reviews">-->
-<!--          <area shape="rect" coords="400,200,1000,300" href="#text-reviews" data-anchor="1" data-tab="text-tab" alt="Читать больше текстовых отзывов">-->
-<!--          <area shape="circle" coords="1100,300,78" href="#video-reviews" data-tab="video-tab" data-anchor="2" alt="Запустить видео отзыв">-->
-<!--        </map>-->
-<!--      </div>-->
       <div class="container">
         <h2 class="intro__title">Духовный наставник <span>по материальным вопросам</span></h2>
         <div class="intro__image-wrapper">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/main-foto-mobile@1x.webp 1x, img/content/main-foto-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/main-foto-mobile2@1x.webp 1x, img/content/main-foto-mobile2@2x.webp 2x">
             <source type="image/webp" srcset="img/content/main-foto@1x.webp 1x, img/content/main-foto@2x.webp 2x">
             <source media="(max-width: 767px)" srcset="img/content/main-foto-mobile2@1x.png 1x, img/content/main-foto-mobile2@2x.png 2x">
             <!-- 1х: 703px; 2x: 1406px -->
@@ -72,7 +65,28 @@
           <li data-text="1">Помогаю женщинам найти свое место в&nbsp;жизни</li>
           <li>Помогаю научиться жить в&nbsp;любви и&nbsp;вдохновении</li>
         </ul>
-        <div class="intro__reviews">
+        <div class="intro__reviews intro__reviews--back">
+          <div class="intro__text-review-wrapper">
+            <div class="intro__user">
+              <div></div>
+              <span class="intro__user-name">Юлия М.</span>
+            </div>
+            <p class="intro__user-text">
+              Здорово иметь такого специалиста как вы, который ведет
+              за&nbsp;руку. У меня запустились процессы работы с&nbsp;глубинными убеждениями, целостность и&nbsp;согласованность внутри,
+              что&nbsp;даёт ощущения стержня.
+            </p>
+          </div>
+          <a class="intro__link-image" href="#video-reviews" data-tab="video-tab" data-anchor="2" aria-label="Запустить видео">
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/content/icon-button-play-mobile@1x.png 1x, img/content/icon-button-play-mobile@2x.png 2x">
+              <!-- 1х: 24px; 2x: 48px -->
+              <img src="img/content/icon-button-play-intro@1x.png" srcset="img/content/icon-button-play-intro@2x.png 2x" width="24" height="28" aria-hidden="true" alt="Иконка кнопки воспроизведения видео">
+            </picture>
+          </a>
+          <p class="intro__link-text">Посмотрите видео отзыв</p>
+        </div>
+        <div class="intro__reviews intro__reviews--front">
           <div class="intro__text-review-wrapper">
             <div class="intro__user">
               <div>

@@ -11,111 +11,137 @@
     width: 1920px;
     height: 1749px;
     z-index: 3;
-    top: 0;
-    left: 50%;
+    top: -10px;
+    left: 47%;
     transform: translateX(-50%);
     background-image: url("../assets/img/content/main-foto-clouds-top.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top 35px;
 
+    @media (max-width: 1289px) {
+      top: -107px
+    }
+
     @include vp-1199 {
-      top: -4.5vw;
+      //top: -4.5vw;
+      top: -170px;
+    }
+
+    @media (max-width: 990px) {
+      top: -216px;
+      left: 64%;
     }
 
     @include vp-1023 {
       //top: -30.5vw;
-      top: -21.5vw;
-      left: 92%;
+      //top: -21.5vw;
+      top: -216px;
+      left: 40%;
     }
 
-    @include vp-949 {
-      top: -23.5vw;
-      left: 60%;
-    }
-
-    @include vp-858 {
-      top: -25.5vw;
-    }
+    //@include vp-949 {
+    //  top: -23.5vw;
+    //  left: 60%;
+    //}
+    //
+    //@include vp-858 {
+    //  top: -25.5vw;
+    //}
 
     @include vp-767 {
-      background-image: url("../assets/img/content/clouds-mobile3@1x.png");
-      background-size: 100% auto;
-      top: -13.5vw;
+      //background-image: url("../assets/img/content/clouds-mobile3@1x.png");
+      //background-size: 100% auto;
+      //top: -13.5vw;
+
+      background-image: url("../assets/img/content/clouds-test-mobile.png");
+      background-size: 100% 100%;
+      top: 226px;
+      //top: 110px;
+      width: 100%;
+      height: 424px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     @media (max-width: 677px) {
-      top: -18.5vw;
+      //top: -18.5vw;
+      top: 278px;
+
+    }
+
+    @include vp-599{
+      top: 229px;
     }
 
     @include vp-479 {
-      top: -15.5vw;
+      //top: -15.5vw;
+      top: 221px;
     }
 
-    @media (max-width: 455px) {
-      top: -18.5vw;
-    }
+    //@media (max-width: 455px) {
+    //  top: -18.5vw;
+    //}
   }
 
-  &::after {
-    @include vp-767 {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 424px;
-      z-index: 2;
-      top: 95px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-image: url("../assets/img/content/clouds-mobile2@1x.png");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-    }
-
-    @media (max-width: 726px) {
-      top: 114px;
-    }
-
-    @media (max-width: 677px) {
-      top: 188px;
-    }
-
-    @media (max-width: 628px) {
-      top: 210px;
-    }
-
-    @media (max-width: 558px) {
-      top: 225px;
-    }
-
-    @media (max-width: 500px) {
-      top: 237px;
-    }
-
-    @media (max-width: 479px) {
-      top: 219px;
-    }
-
-    @media (max-width: 450px) {
-      top: 224px;
-    }
-
-    @media (max-width: 443px) {
-      top: 230px;
-    }
-
-    @media (max-width: 425px) {
-      top: 240px;
-    }
-
-    @media (max-width: 405px) {
-      top: 246px;
-    }
-
-    @media (max-width: 398px) {
-      top: 260px;
-    }
-  }
+  //&::after {
+  //  @include vp-767 {
+  //    content: "";
+  //    position: absolute;
+  //    width: 100%;
+  //    height: 424px;
+  //    z-index: 2;
+  //    top: 95px;
+  //    left: 50%;
+  //    transform: translateX(-50%);
+  //    background-image: url("../assets/img/content/clouds-mobile2@1x.png");
+  //    background-repeat: no-repeat;
+  //    background-size: 100% auto;
+  //  }
+    //@media (max-width: 726px) {
+    //  top: 114px;
+    //}
+    //
+    //@media (max-width: 677px) {
+    //  top: 188px;
+    //}
+    //
+    //@media (max-width: 628px) {
+    //  top: 210px;
+    //}
+    //
+    //@media (max-width: 558px) {
+    //  top: 225px;
+    //}
+    //
+    //@media (max-width: 500px) {
+    //  top: 237px;
+    //}
+    //
+    //@media (max-width: 479px) {
+    //  top: 219px;
+    //}
+    //
+    //@media (max-width: 450px) {
+    //  top: 224px;
+    //}
+    //
+    //@media (max-width: 443px) {
+    //  top: 230px;
+    //}
+    //
+    //@media (max-width: 425px) {
+    //  top: 240px;
+    //}
+    //
+    //@media (max-width: 405px) {
+    //  top: 246px;
+    //}
+    //
+    //@media (max-width: 398px) {
+    //  top: 260px;
+    //}
+  //}
 
   header,
   footer {
